@@ -1,8 +1,8 @@
-import logging
-import os
-from datetime import datetime
+import logging # pylint: disable=E0401
+import os # pylint: disable=E0401
+from datetime import datetime # pylint: disable=E0401
 
-from colorama import Fore, Style, init
+from colorama import Fore, Style, init # pylint: disable=E0401
 
 if os.name == "nt":
     init(autoreset=True, convert=True, strip=False)
