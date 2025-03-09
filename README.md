@@ -17,7 +17,7 @@ Musipy is a powerful and versatile Discord music bot built with Disnake and Lava
 ## Prerequisites
 
 *   [Python 3.8+](https://www.python.org/downloads/)
-*   [Lavalink.jar](https://github.com/freyacodes/Lavalink) (version 4.0 or higher)
+*   [lavalink.jar](https://github.com/freyacodes/Lavalink) (version 4.0 or higher)
 *   [Java 11+](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html) (for running Lavalink)
 *   [Disnake](https://github.com/DisnakeDev/disnake)
 *   A Discord bot token
@@ -38,18 +38,7 @@ Musipy is a powerful and versatile Discord music bot built with Disnake and Lava
     *   Rename `application.example.yml` to `application.yml`.
     *   Fill in your Lavalink server password, YouTube email/password (optional, but recommended for age-restricted content), and Spotify client ID/secret.
 
-    ```yml
-    lavalink:
-      server:
-        password: "your_lavalink_password"
-      youtubeConfig:
-        email: "your_youtube_email@gmail.com"
-        password: "your_youtube_password"
-      lavasrc:
-        spotify:
-          clientId: "your_spotify_client_id"
-          clientSecret: "your_spotify_client_secret"
-    ```
+
 You can skip steps 3 to 5 and run with `./start.ps1` or `./start.sh`
 
 3.  **Install dependencies:** 
@@ -74,7 +63,7 @@ You can skip steps 3 to 5 and run with `./start.ps1` or `./start.sh`
 
 4.  **Start Lavalink:**
 
-    *   Download the latest `lavalink.jar` from the [Lavalink releases page](https://github.com/freyacodes/Lavalink/releases).
+    *   Download the latest `lavalink.jar` from the [Lavalink releases page](https://github.com/freyacodes/Lavalink/releases). (case sensitive name)
     *   Place the `lavalink.jar` file in your Musipy project directory.
     *   Run Lavalink:
 
