@@ -4,9 +4,12 @@ import os
 from colorama import Fore, Style, init
 from datetime import datetime
 
-if os.name == "nt": init(autoreset=True, convert=True, strip=False)
-elif os.name == "posix": init(autoreset=True, convert=False)
-else: init(autoreset=True)
+if os.name == "nt":
+    init(autoreset=True, convert=True, strip=False)
+elif os.name == "posix":
+    init(autoreset=True, convert=False)
+else:
+    init(autoreset=True)
 
 
 class LogFormatter(logging.Formatter):

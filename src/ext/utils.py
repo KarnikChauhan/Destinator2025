@@ -32,20 +32,24 @@ class CLI_Parser:
             arg = sys.argv[i]
 
             # Handle --key=value format
-            if arg.startswith('--') and '=' in arg:
-                key, value = arg[2:].split('=', 1)
+            if arg.startswith("--") and "=" in arg:
+                key, value = arg[2:].split("=", 1)
                 self.add_arguments(key, value)
                 i += 1
 
             # Handle --key value format
-            elif arg.startswith('--') and i + 1 < len(sys.argv) and not sys.argv[i + 1].startswith('--'):
+            elif (
+                arg.startswith("--")
+                and i + 1 < len(sys.argv)
+                and not sys.argv[i + 1].startswith("--")
+            ):
                 key = arg[2:]
                 value = sys.argv[i + 1]
                 self.add_arguments(key, value)
                 i += 2
 
             # Handle --flag format (boolean flags)
-            elif arg.startswith('--'):
+            elif arg.startswith("--"):
                 key = arg[2:]
                 self.add_arguments(key, True)
                 i += 1
@@ -55,7 +59,7 @@ class CLI_Parser:
                 i += 1
 
     @classmethod
-    def from_sys_args(cls) -> 'CLI_Parser':
+    def from_sys_args(cls) -> "CLI_Parser":
         """
         Factory method to create a parser and immediately parse sys.argv
 
@@ -156,7 +160,7 @@ class Utils:
         return Utils.get_project_root() / relative_path
 
     @staticmethod
-    def read_file(relative_path: str, encoding: str = 'utf-8') -> str:
+    def read_file(relative_path: str, encoding: str = "utf-8") -> str:
         """
         Read a file from a path relative to project root
 
@@ -168,11 +172,11 @@ class Utils:
             File contents as string
         """
         file_path = Utils.resolve_path(relative_path)
-        with open(file_path, 'r', encoding=encoding) as file:
+        with open(file_path, "r", encoding=encoding) as file:
             return file.read()
 
     @staticmethod
-    def write_file(relative_path: str, content: str, encoding: str = 'utf-8') -> None:
+    def write_file(relative_path: str, content: str, encoding: str = "utf-8") -> None:
         """
         Write content to a file at path relative to project root
 
@@ -183,9 +187,8 @@ class Utils:
         """
         file_path = Utils.resolve_path(relative_path)
         os.makedirs(os.path.dirname(file_path), exist_ok=True)
-        with open(file_path, 'w', encoding=encoding) as file:
+        with open(file_path, "w", encoding=encoding) as file:
             file.write(content)
-
 
     @staticmethod
     def ensure_str(func):
@@ -201,7 +204,3 @@ class Utils:
     @ensure_str
     def highlight_text(text: str, fore: colorama.Fore):
         return f"{fore}{text}{colorama.Style.RESET_ALL}"
-
-
-
-
