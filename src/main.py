@@ -1,13 +1,16 @@
-import os
-import signal
 import asyncio
-import disnake
-import sys
+import os
 import platform
+import signal
+import sys
+import traceback
+
+import disnake
 from colorama import Fore
 from disnake.ext import commands
-from ext.utils import CLI_Parser, Utils
+
 from ext.logger import get_logger
+from ext.utils import CLI_Parser, Utils
 
 
 class Bot(commands.InteractionBot):
@@ -41,7 +44,9 @@ bot = Bot(
 @bot.event
 async def on_ready():
     logger = get_logger(__name__)
-    logger.info(f"Logged in as {Utils.highlight_text(bot.user.name, Fore.LIGHTBLUE_EX)} (ID: {Utils.highlight_text(bot.user.id, Fore.LIGHTBLUE_EX)})")  # type: ignore
+    logger.info(
+        f"Logged in as {Utils.highlight_text(bot.user.name, Fore.LIGHTBLUE_EX)} (ID: {Utils.highlight_text(bot.user.id, Fore.LIGHTBLUE_EX)})"
+    )  # type: ignore
 
 
 async def shutdown(signal, loop):
@@ -50,7 +55,7 @@ async def shutdown(signal, loop):
     await bot.close()
 
 
-import traceback
+
 
 if __name__ == "__main__":
     logger = get_logger(__name__)

@@ -1,8 +1,8 @@
 import logging
 import os
+from datetime import datetime
 
 from colorama import Fore, Style, init
-from datetime import datetime
 
 if os.name == "nt":
     init(autoreset=True, convert=True, strip=False)

@@ -1,9 +1,8 @@
 import functools
-import sys
 import os
+import sys
 from pathlib import Path
-
-from typing import Any, Dict, Optional, List, Union
+from typing import Any, Dict
 
 import colorama
 

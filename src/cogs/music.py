@@ -1,19 +1,19 @@
-import disnake # pylint: disable=C0302, C0114, E0401
-import lavalink # pylint: disable=E0401
-import random # pylint: disable=E0401
-import re # pylint: disable=E0401
-from disnake.ext import commands # pylint: disable=E0401
-from ext.logger import get_logger # pylint: disable=E0401
-from ext.utils import Utils # pylint: disable=E0401
-from lavalink import LoadType, Node # pylint: disable=E0401
-from lavalink.errors import ClientError # pylint: disable=E0401
-from lavalink.events import ( # pylint: disable=E0401
-    TrackStartEvent, # pylint: disable=E0401
-    QueueEndEvent, # pylint: disable=E0401
-    TrackEndEvent, # pylint: disable=E0401
-    TrackExceptionEvent, # pylint: disable=E0401
-) # pylint: disable=E0401
-from typing import Optional, Dict, Any, List # pylint: disable=E0401
+import random  # pylint: disable=E0401
+import re  # pylint: disable=E0401
+from typing import Any, Dict, List, Optional  # pylint: disable=E0401
+
+import disnake  # pylint: disable=C0302, C0114, E0401
+import lavalink  # pylint: disable=E0401
+from disnake.ext import commands  # pylint: disable=E0401
+from lavalink import LoadType, Node  # pylint: disable=E0401
+from lavalink.errors import ClientError  # pylint: disable=E0401
+from lavalink.events import QueueEndEvent  # pylint: disable=E0401
+from lavalink.events import TrackEndEvent  # pylint: disable=E0401
+from lavalink.events import TrackExceptionEvent  # pylint: disable=E0401
+from lavalink.events import TrackStartEvent  # pylint: disable=E0401; pylint: disable=E0401
+
+from ext.logger import get_logger  # pylint: disable=E0401
+from ext.utils import Utils  # pylint: disable=E0401
 
 logger = get_logger("MusicCog")
 
@@ -78,12 +78,12 @@ class LavalinkVoiceClient(disnake.VoiceProtocol):
         await self.lavalink.voice_update_handler(lavalink_data)
 
     async def connect(
-            self,
-            *,
-            timeout: float,
-            reconnect: bool,
-            self_deaf: bool = True,
-            self_mute: bool = False,
+        self,
+        *,
+        timeout: float,
+        reconnect: bool,
+        self_deaf: bool = True,
+        self_mute: bool = False,
     ) -> None:
         """Connect to the voice channel"""
         self.lavalink.player_manager.create(guild_id=self.channel.guild.id)
@@ -136,9 +136,9 @@ class MusicCog(commands.Cog):
 
         bot.loop.create_task(self._setup_lavalink())
 
-        self._queue_history: Dict[int, List[Dict[str, Any]]] = (
-            {}
-        )  # Store queue history per guild
+        self._queue_history: Dict[
+            int, List[Dict[str, Any]]
+        ] = {}  # Store queue history per guild
 
         # Map of emojis for different music sources
         self.source_emojis = {
@@ -183,7 +183,7 @@ class MusicCog(commands.Cog):
         logger.info("Music cog unloaded")
 
     async def cog_slash_command_error(
-            self, inter: disnake.ApplicationCommandInteraction, error: Exception
+        self, inter: disnake.ApplicationCommandInteraction, error: Exception
     ):
         """Handle errors from slash commands"""
         if isinstance(error, commands.CommandInvokeError):
@@ -205,7 +205,7 @@ class MusicCog(commands.Cog):
         logger.error(f"Command error: {error}", exc_info=True)
 
     async def ensure_voice(
-            self, inter: disnake.ApplicationCommandInteraction
+        self, inter: disnake.ApplicationCommandInteraction
     ) -> Optional[lavalink.DefaultPlayer]:
         """
         Ensure the bot is in a voice channel and the user meets the requirements
@@ -258,8 +258,8 @@ class MusicCog(commands.Cog):
             # Check user limit
             if voice_channel.user_limit > 0:
                 if (
-                        len(voice_channel.members) >= voice_channel.user_limit
-                        and not inter.guild.me.guild_permissions.move_members
+                    len(voice_channel.members) >= voice_channel.user_limit
+                    and not inter.guild.me.guild_permissions.move_members
                 ):
                     await inter.response.send_message(
                         "Your voice channel is full!", ephemeral=True
@@ -420,9 +420,9 @@ class MusicCog(commands.Cog):
 
     @commands.slash_command(name="play")
     async def play(
-            self,
-            inter: disnake.ApplicationCommandInteraction,
-            query: str = commands.Param(description="Song name or URL to play"),
+        self,
+        inter: disnake.ApplicationCommandInteraction,
+        query: str = commands.Param(description="Song name or URL to play"),
     ):
         """Search and play a song"""
         await inter.response.defer()
@@ -542,14 +542,14 @@ class MusicCog(commands.Cog):
 
     @commands.slash_command(name="search")
     async def search(
-            self,
-            inter: disnake.ApplicationCommandInteraction,
-            query: str = commands.Param(description="What song to search for"),
-            platform: str = commands.Param(
-                description="Platform to search on",
-                choices=["YouTube", "SoundCloud", "All"],
-                default="All",
-            ),
+        self,
+        inter: disnake.ApplicationCommandInteraction,
+        query: str = commands.Param(description="What song to search for"),
+        platform: str = commands.Param(
+            description="Platform to search on",
+            choices=["YouTube", "SoundCloud", "All"],
+            default="All",
+        ),
     ):
         """Search for songs and select one to play"""
         await inter.response.defer()
@@ -696,9 +696,9 @@ class MusicCog(commands.Cog):
 
     @commands.slash_command(name="queue")
     async def queue(
-            self,
-            inter: disnake.ApplicationCommandInteraction,
-            page: int = commands.Param(description="Page number to view", default=1, ge=1),
+        self,
+        inter: disnake.ApplicationCommandInteraction,
+        page: int = commands.Param(description="Page number to view", default=1, ge=1),
     ):
         """View the current song queue"""
         player = self.bot.lavalink.player_manager.get(inter.guild_id)
@@ -728,15 +728,15 @@ class MusicCog(commands.Cog):
         # Add current track
         if player.is_playing:
             current = player.current
-            current_duration = self.format_time(current.duration)
-            current_pos = self.format_time(player.position)
+            self.format_time(current.duration)
+            self.format_time(player.position)
             emoji = self.get_platform_emoji(current)
 
             embed.add_field(
                 name="Now Playing",
                 value=f"{emoji} **[{current.title}]({current.uri})**"
-                      "`[{current_pos}/{current_duration}]`\n"
-                      f"Requested by: <@{current.extra.get('requester', 'Unknown')}>",
+                "`[{current_pos}/{current_duration}]`\n"
+                f"Requested by: <@{current.extra.get('requester', 'Unknown')}>",
                 inline=False,
             )
 
@@ -765,7 +765,7 @@ class MusicCog(commands.Cog):
         embed.add_field(
             name="Queue Info",
             value=f"**{len(player.queue)}** tracks | "
-                  f"`{self.format_time(total_length)}` total length",
+            f"`{self.format_time(total_length)}` total length",
             inline=False,
         )
 
@@ -821,7 +821,7 @@ class MusicCog(commands.Cog):
         await inter.response.send_message(embed=embed, view=view)
 
     async def update_queue_message(
-            self, inter: disnake.MessageInteraction, page: int, items_per_page: int
+        self, inter: disnake.MessageInteraction, page: int, items_per_page: int
     ):
         """Update the queue message with new page"""
         player = self.bot.lavalink.player_manager.get(inter.guild_id)
@@ -854,8 +854,8 @@ class MusicCog(commands.Cog):
             embed.add_field(
                 name="Now Playing",
                 value=f"{emoji} **[{current.title}]"
-                      f"({current.uri})** `[{current_pos}/{current_duration}]`\n"
-                      f"Requested by: <@{current.extra.get('requester', 'Unknown')}>",
+                f"({current.uri})** `[{current_pos}/{current_duration}]`\n"
+                f"Requested by: <@{current.extra.get('requester', 'Unknown')}>",
                 inline=False,
             )
 
@@ -884,7 +884,7 @@ class MusicCog(commands.Cog):
         embed.add_field(
             name="Queue Info",
             value=f"**{len(player.queue)}** tracks | "
-        f"`{self.format_time(total_length)}` total length",
+            f"`{self.format_time(total_length)}` total length",
             inline=False,
         )
 
@@ -941,11 +941,11 @@ class MusicCog(commands.Cog):
 
     @commands.slash_command(name="skip")
     async def skip(
-            self,
-            inter: disnake.ApplicationCommandInteraction,
-            index: int = commands.Param(
-                description="Skip to specific position in queue", default=None, ge=1
-            ),
+        self,
+        inter: disnake.ApplicationCommandInteraction,
+        index: int = commands.Param(
+            description="Skip to specific position in queue", default=None, ge=1
+        ),
     ):
         """Skip the current track or to a specific position"""
         player = self.bot.lavalink.player_manager.get(inter.guild_id)
@@ -1018,7 +1018,7 @@ class MusicCog(commands.Cog):
             await guild.voice_client.disconnect(force=True)
         embed = disnake.Embed(
             title="⏹️ Stopped playback",
-            description=f"Stopped playback and cleared the queue",
+            description="Stopped playback and cleared the queue",
             color=disnake.Color.red(),
         )
         await inter.response.send_message(embed=embed)
@@ -1032,7 +1032,7 @@ class MusicCog(commands.Cog):
         if not player or not player.is_playing:
             embed = disnake.Embed(
                 title="❌ Error",
-                description=f"Nothing is playing right now",
+                description="Nothing is playing right now",
                 color=disnake.Color.red(),
             )
             return await inter.response.send_message(embed=embed, ephemeral=True)
@@ -1041,7 +1041,7 @@ class MusicCog(commands.Cog):
         if player.paused:
             embed = disnake.Embed(
                 title="❌ Error",
-                description=f"Playback is already paused",
+                description="Playback is already paused",
                 color=disnake.Color.red(),
             )
             return await inter.response.send_message(embed=embed, ephemeral=True)
@@ -1050,7 +1050,7 @@ class MusicCog(commands.Cog):
         await player.set_pause(True)
         embed = disnake.Embed(
             title="⏹️ Paused playback",
-            description=f"Paused playback",
+            description="Paused playback",
             color=disnake.Color.red(),
         )
         await inter.response.send_message(embed=embed)
@@ -1064,7 +1064,7 @@ class MusicCog(commands.Cog):
         if not player or not player.is_playing:
             embed = disnake.Embed(
                 title="❌ Error",
-                description=f"Nothing is playing right now",
+                description="Nothing is playing right now",
                 color=disnake.Color.red(),
             )
             return await inter.response.send_message(embed=embed, ephemeral=True)
@@ -1073,7 +1073,7 @@ class MusicCog(commands.Cog):
         if not player.paused:
             embed = disnake.Embed(
                 title="❌ Error",
-                description=f"Playback is already paused",
+                description="Playback is already paused",
                 color=disnake.Color.red(),
             )
             return await inter.response.send_message(embed=embed, ephemeral=True)
@@ -1082,7 +1082,7 @@ class MusicCog(commands.Cog):
         await player.set_pause(False)
         embed = disnake.Embed(
             title="⏹️ Resumed playback",
-            description=f"Resumed playback",
+            description="Resumed playback",
             color=disnake.Color.red(),
         )
         await inter.response.send_message(embed=embed)
@@ -1090,9 +1090,9 @@ class MusicCog(commands.Cog):
 
     @commands.slash_command(name="volume")
     async def volume(
-            self,
-            inter: disnake.ApplicationCommandInteraction,
-            level: int = commands.Param(description="Volume level (0-100)", ge=0, le=100),
+        self,
+        inter: disnake.ApplicationCommandInteraction,
+        level: int = commands.Param(description="Volume level (0-100)", ge=0, le=100),
     ):
         """Set the playback volume"""
         player = await self.ensure_voice(inter)
@@ -1117,7 +1117,7 @@ class MusicCog(commands.Cog):
         if not player or not player.is_playing:
             embed = disnake.Embed(
                 title="❌ Error",
-                description=f"Nothing is playing right now",
+                description="Nothing is playing right now",
                 color=disnake.Color.red(),
             )
             return await inter.response.send_message(embed=embed, ephemeral=True)
@@ -1214,7 +1214,7 @@ class MusicCog(commands.Cog):
         emoji = "🔀"
         embed = disnake.Embed(
             title=f"{emoji} Queue Shuffled ",
-            description=f"Queue has been shuffled randomically",
+            description="Queue has been shuffled randomically",
             color=disnake.Color.blurple(),
         )
         await inter.response.send_message(embed=embed)
@@ -1222,9 +1222,9 @@ class MusicCog(commands.Cog):
 
     @commands.slash_command(name="playnext")
     async def playnext(
-            self,
-            inter: disnake.ApplicationCommandInteraction,
-            index: int = commands.Param(description="Position in queue to play next", ge=1),
+        self,
+        inter: disnake.ApplicationCommandInteraction,
+        index: int = commands.Param(description="Position in queue to play next", ge=1),
     ):
         """Play a specific song from the queue next"""
         player = self.bot.lavalink.player_manager.get(inter.guild_id)
@@ -1232,7 +1232,7 @@ class MusicCog(commands.Cog):
         if not player or not player.queue:
             embed = disnake.Embed(
                 title="❌ Error",
-                description=f"The queue is empty",
+                description="The queue is empty",
                 color=disnake.Color.red(),
             )
             return await inter.response.send_message(embed=embed, ephemeral=True)
@@ -1268,11 +1268,11 @@ class MusicCog(commands.Cog):
 
     @commands.slash_command(name="repeat")
     async def repeat(
-            self,
-            inter: disnake.ApplicationCommandInteraction,
-            mode: str = commands.Param(
-                description="Repeat mode", choices=["off", "one", "all"], default="all"
-            ),
+        self,
+        inter: disnake.ApplicationCommandInteraction,
+        mode: str = commands.Param(
+            description="Repeat mode", choices=["off", "one", "all"], default="all"
+        ),
     ):
         """Set repeat mode (off, track, or queue)"""
         player = await self.ensure_voice(inter)
@@ -1302,9 +1302,9 @@ class MusicCog(commands.Cog):
 
     @commands.slash_command(name="remove")
     async def remove(
-            self,
-            inter: disnake.ApplicationCommandInteraction,
-            index: int = commands.Param(description="Position in queue to remove", ge=1),
+        self,
+        inter: disnake.ApplicationCommandInteraction,
+        index: int = commands.Param(description="Position in queue to remove", ge=1),
     ):
         """Remove a track from the queue"""
         player = self.bot.lavalink.player_manager.get(inter.guild_id)
@@ -1312,7 +1312,7 @@ class MusicCog(commands.Cog):
         if not player or not player.queue:
             embed = disnake.Embed(
                 title="❌ Error",
-                description=f"The queue is empty",
+                description="The queue is empty",
                 color=disnake.Color.red(),
             )
             return await inter.response.send_message(embed=embed, ephemeral=True)
@@ -1351,7 +1351,7 @@ class MusicCog(commands.Cog):
         if not player or not player.queue:
             embed = disnake.Embed(
                 title="❌ Error",
-                description=f"The queue is already empty",
+                description="The queue is already empty",
                 color=disnake.Color.red(),
             )
             return await inter.response.send_message(embed=embed, ephemeral=True)
@@ -1371,9 +1371,9 @@ class MusicCog(commands.Cog):
 
     @commands.slash_command(name="seek")
     async def seek(
-            self,
-            inter: disnake.ApplicationCommandInteraction,
-            position: str = commands.Param(description="Position to seek to (e.g. '1:30')"),
+        self,
+        inter: disnake.ApplicationCommandInteraction,
+        position: str = commands.Param(description="Position to seek to (e.g. '1:30')"),
     ):
         """Seek to a specific position in the current track"""
         player = self.bot.lavalink.player_manager.get(inter.guild_id)
@@ -1381,7 +1381,7 @@ class MusicCog(commands.Cog):
         if not player or not player.is_playing:
             embed = disnake.Embed(
                 title="❌ Error",
-                description=f"Nothing is playing right now",
+                description="Nothing is playing right now",
                 color=disnake.Color.red(),
             )
             return await inter.response.send_message(embed=embed, ephemeral=True)
@@ -1402,7 +1402,7 @@ class MusicCog(commands.Cog):
         except ValueError:
             embed = disnake.Embed(
                 title="❌ Error",
-                description=f"Invalid time format. Use 'mm:ss', 'hh:mm:ss', or seconds.",
+                description="Invalid time format. Use 'mm:ss', 'hh:mm:ss', or seconds.",
                 color=disnake.Color.red(),
             )
 
@@ -1442,7 +1442,7 @@ class MusicCog(commands.Cog):
         if not player or not player.is_connected:
             embed = disnake.Embed(
                 title="❌ Error",
-                description=f"Im not connected to a voice channel",
+                description="Im not connected to a voice channel",
                 color=disnake.Color.red(),
             )
             return await inter.response.send_message(embed=embed, ephemeral=True)
@@ -1458,7 +1458,7 @@ class MusicCog(commands.Cog):
 
         embed = disnake.Embed(
             title="👋 Bye Bye!",
-            description=f"Disconnected from voice channel",
+            description="Disconnected from voice channel",
             color=disnake.Color.blurple(),
         )
 
@@ -1473,7 +1473,7 @@ class MusicCog(commands.Cog):
         if guild_id not in self._queue_history or not self._queue_history[guild_id]:
             embed = disnake.Embed(
                 title="❌ Error",
-                description=f"No queue history available",
+                description="No queue history available",
                 color=disnake.Color.red(),
             )
             return await inter.response.send_message(embed=embed, ephemeral=True)
