@@ -1,15 +1,15 @@
 server: # REST and WS server
-  port: 2333
-  address: 0.0.0.0
+  port: 2333 # ./start.sh and ./start.ps1 depend on this so be careful
+  address: 0.0.0.0 # # ./start.sh and ./start.ps1 depend on this so be careful
   http2:
     enabled: false # Whether to enable HTTP/2 support
-plugins:
-  youtube:
+plugins: # Plugin settings
+  youtube: # Plugin that lets you check yt source, check this for info https://github.com/lavalink-devs/youtube-source
     enabled: true # Whether this source can be used.
     allowSearch: true # Whether "ytsearch:" and "ytmsearch:" can be used.
     allowDirectVideoIds: true # Whether just video IDs can match. If false, only complete URLs will be loaded.
     allowDirectPlaylistIds: true # Whether just playlist IDs can match. If false, only complete URLs will be loaded.
-    # The clients to use for track loading. See below for a list of valid clients.
+    # The clients to use for track loading
     # Clients are queried in the order they are given (so the first client is queried first and so on...)
     clients:
       - MUSIC
@@ -17,58 +17,54 @@ plugins:
       - WEB
       - WEBEMBEDDED 
     email: "mail" # Email of Google account
-    password: "password"
-  lavasrc:
+    password: "password" # Password of google account
+  lavasrc: # Check this for info https://github.com/topi314/LavaSrc
     sources:
-      youtube: false
-      spotify: true
-      deezer: false
-      apple: false
-    spotify:
+      youtube: false # Wether this source is used
+      spotify: true # Wether this source is used
+      deezer: false # Wether this source is used
+      apple: false # Wether this source is used
+    spotify: # Spotify client settings
       clientId: "id HERE"
       clientSecret: "secret HERE"
       countryCode: "IT" # Edit based on preference
-      playlistLoadLimit: 1000
-      albumLoadLimit: 1000
-#  name: # Name of the plugin
-#    some_key: some_value # Some key-value pair for the plugin
-#    another_key: another_value
+      playlistLoadLimit: 1000 # Number of pages at 100 each
+      albumLoadLimit: 1000# Number of pages at 100 each
+
 lavalink:
-  plugins:
+  plugins: # Dont change this 
     - dependency: "dev.lavalink.youtube:youtube-plugin:1.11.5"
     - dependency: "com.github.topi314.lavasrc:lavasrc-plugin:4.4.2"
       snapshot: false
 
-#    - dependency: "com.github.example:example-plugin:1.0.0" # required, the coordinates of your plugin
-#      repository: "https://maven.example.com/releases" # optional, defaults to the Lavalink releases repository by default
-#      snapshot: false # optional, defaults to false, used to tell Lavalink to use the snapshot repository instead of the release repository
 #  pluginsDir: "./plugins" # optional, defaults to "./plugins"
 #  defaultPluginRepository: "https://maven.lavalink.dev/releases" # optional, defaults to the Lavalink release repository
 #  defaultPluginSnapshotRepository: "https://maven.lavalink.dev/snapshots" # optional, defaults to the Lavalink snapshot repository
   server:
     password: "youshallnotpass" # Edit this
     sources:
-      # The default Youtube source is now deprecated and won't receive further updates. Please use https://github.com/lavalink-devs/youtube-source#plugin instead.
-      youtube: false
-      bandcamp: true
-      soundcloud: true
-      twitch: true
-      vimeo: true
-      nico: true
+
+      youtube: false # keep this off since we're using youtube src plugin
+      bandcamp: true # Wether this source is used
+      soundcloud: true # Wether this source is used
+      twitch: true # Wether this source is used
+      vimeo: true # Wether this source is used
+      nico: true # Wether this source is used
       http: true # warning: keeping HTTP enabled without a proxy configured could expose your server's IP address.
-      local: false
-      spotify: false
-    filters: # All filters are enabled by default
-      volume: true
-      equalizer: true
-      karaoke: true
-      timescale: true
-      tremolo: true
-      vibrato: true
-      distortion: true
-      rotation: true
-      channelMix: true
-      lowPass: true
+      local: false  # Keep off
+      spotify: false # Keep off
+    filters: # All filters are disabled by default
+      volume: false # Wether this filter is used
+      equalizer: false # Wether this filter is used
+      karaoke: false # Wether this filter is used
+      timescale: false # Wether this filter is used
+      tremolo: false # Wether this filter is used
+      vibrato: false # Wether this filter is used
+      distortion: false # Wether this filter is used
+      rotation: false # Wether this filter is used
+      channelMix: false # Wether this filter is used
+      lowPass: false # Wether this filter is used
+      
     nonAllocatingFrameBuffer: false # Setting to true reduces the number of allocations made by each player at the expense of frame rebuilding (e.g. non-instantaneous volume changes)
     bufferDurationMs: 400 # The duration of the NAS buffer. Higher values fare better against longer GC pauses. Duration <= 0 to disable JDA-NAS. Minimum of 40ms, lower values may introduce pauses.
     frameBufferDurationMs: 5000 # How many milliseconds of audio to keep buffered
@@ -78,7 +74,7 @@ lavalink:
     useSeekGhosting: true # Seek ghosting is the effect where whilst a seek is in progress, the audio buffer is read from until empty, or until seek is ready.
     youtubePlaylistLoadLimit: 6 # Number of pages at 100 each
     playerUpdateInterval: 5 # How frequently to send player updates to clients, in seconds
-    youtubeSearchEnabled: true
+    youtubeSearchEnabled: true 
     soundcloudSearchEnabled: true
     gc-warnings: true
     #ratelimit:
