@@ -1,15 +1,7 @@
-"""
-Advanced Lavalink Music Cog for Disnake
-Supports: YouTube, SoundCloud, Spotify, Prime Music, and more
-Features: Play, Queue management, Filters, and more via slash commands
-"""
-
-import re
-from typing import Optional, Dict, Any, List
-
 import disnake
 import lavalink
 import random
+import re
 from disnake.ext import commands
 from ext.logger import get_logger
 from ext.utils import Utils
@@ -21,7 +13,7 @@ from lavalink.events import (
     TrackEndEvent,
     TrackExceptionEvent,
 )
-
+from typing import Optional, Dict, Any, List
 
 logger = get_logger("MusicCog")
 
@@ -76,12 +68,12 @@ class LavalinkVoiceClient(disnake.VoiceProtocol):
         await self.lavalink.voice_update_handler(lavalink_data)
 
     async def connect(
-        self,
-        *,
-        timeout: float,
-        reconnect: bool,
-        self_deaf: bool = True,
-        self_mute: bool = False,
+            self,
+            *,
+            timeout: float,
+            reconnect: bool,
+            self_deaf: bool = True,
+            self_mute: bool = False,
     ) -> None:
         """Connect to the voice channel"""
         self.lavalink.player_manager.create(guild_id=self.channel.guild.id)
@@ -181,7 +173,7 @@ class MusicCog(commands.Cog):
         logger.info("Music cog unloaded")
 
     async def cog_slash_command_error(
-        self, inter: disnake.ApplicationCommandInteraction, error: Exception
+            self, inter: disnake.ApplicationCommandInteraction, error: Exception
     ):
         """Handle errors from slash commands"""
         if isinstance(error, commands.CommandInvokeError):
@@ -203,7 +195,7 @@ class MusicCog(commands.Cog):
         logger.error(f"Command error: {error}", exc_info=True)
 
     async def ensure_voice(
-        self, inter: disnake.ApplicationCommandInteraction
+            self, inter: disnake.ApplicationCommandInteraction
     ) -> Optional[lavalink.DefaultPlayer]:
         """
         Ensure the bot is in a voice channel and the user meets the requirements
@@ -256,8 +248,8 @@ class MusicCog(commands.Cog):
             # Check user limit
             if voice_channel.user_limit > 0:
                 if (
-                    len(voice_channel.members) >= voice_channel.user_limit
-                    and not inter.guild.me.guild_permissions.move_members
+                        len(voice_channel.members) >= voice_channel.user_limit
+                        and not inter.guild.me.guild_permissions.move_members
                 ):
                     await inter.response.send_message(
                         "Your voice channel is full!", ephemeral=True
@@ -418,9 +410,9 @@ class MusicCog(commands.Cog):
 
     @commands.slash_command(name="play")
     async def play(
-        self,
-        inter: disnake.ApplicationCommandInteraction,
-        query: str = commands.Param(description="Song name or URL to play"),
+            self,
+            inter: disnake.ApplicationCommandInteraction,
+            query: str = commands.Param(description="Song name or URL to play"),
     ):
         """Search and play a song"""
         await inter.response.defer()
@@ -540,14 +532,14 @@ class MusicCog(commands.Cog):
 
     @commands.slash_command(name="search")
     async def search(
-        self,
-        inter: disnake.ApplicationCommandInteraction,
-        query: str = commands.Param(description="What song to search for"),
-        platform: str = commands.Param(
-            description="Platform to search on",
-            choices=["YouTube", "SoundCloud", "All"],
-            default="All",
-        ),
+            self,
+            inter: disnake.ApplicationCommandInteraction,
+            query: str = commands.Param(description="What song to search for"),
+            platform: str = commands.Param(
+                description="Platform to search on",
+                choices=["YouTube", "SoundCloud", "All"],
+                default="All",
+            ),
     ):
         """Search for songs and select one to play"""
         await inter.response.defer()
@@ -694,9 +686,9 @@ class MusicCog(commands.Cog):
 
     @commands.slash_command(name="queue")
     async def queue(
-        self,
-        inter: disnake.ApplicationCommandInteraction,
-        page: int = commands.Param(description="Page number to view", default=1, ge=1),
+            self,
+            inter: disnake.ApplicationCommandInteraction,
+            page: int = commands.Param(description="Page number to view", default=1, ge=1),
     ):
         """View the current song queue"""
         player = self.bot.lavalink.player_manager.get(inter.guild_id)
@@ -732,8 +724,9 @@ class MusicCog(commands.Cog):
 
             embed.add_field(
                 name="Now Playing",
-                value=f"{emoji} **[{current.title}]({current.uri})** `[{current_pos}/{current_duration}]`\n"
-                f"Requested by: <@{current.extra.get('requester', 'Unknown')}>",
+                value=f"{emoji} **[{current.title}]({current.uri})**"
+                      "`[{current_pos}/{current_duration}]`\n"
+                      f"Requested by: <@{current.extra.get('requester', 'Unknown')}>",
                 inline=False,
             )
 
@@ -761,7 +754,8 @@ class MusicCog(commands.Cog):
         total_length = sum(t.duration for t in player.queue)
         embed.add_field(
             name="Queue Info",
-            value=f"**{len(player.queue)}** tracks | `{self.format_time(total_length)}` total length",
+            value=f"**{len(player.queue)}** tracks | "
+                  f"`{self.format_time(total_length)}` total length",
             inline=False,
         )
 
@@ -817,7 +811,7 @@ class MusicCog(commands.Cog):
         await inter.response.send_message(embed=embed, view=view)
 
     async def update_queue_message(
-        self, inter: disnake.MessageInteraction, page: int, items_per_page: int
+            self, inter: disnake.MessageInteraction, page: int, items_per_page: int
     ):
         """Update the queue message with new page"""
         player = self.bot.lavalink.player_manager.get(inter.guild_id)
@@ -849,8 +843,9 @@ class MusicCog(commands.Cog):
 
             embed.add_field(
                 name="Now Playing",
-                value=f"{emoji} **[{current.title}]({current.uri})** `[{current_pos}/{current_duration}]`\n"
-                f"Requested by: <@{current.extra.get('requester', 'Unknown')}>",
+                value=f"{emoji} **[{current.title}]"
+                      f"({current.uri})** `[{current_pos}/{current_duration}]`\n"
+                      f"Requested by: <@{current.extra.get('requester', 'Unknown')}>",
                 inline=False,
             )
 
@@ -935,11 +930,11 @@ class MusicCog(commands.Cog):
 
     @commands.slash_command(name="skip")
     async def skip(
-        self,
-        inter: disnake.ApplicationCommandInteraction,
-        index: int = commands.Param(
-            description="Skip to specific position in queue", default=None, ge=1
-        ),
+            self,
+            inter: disnake.ApplicationCommandInteraction,
+            index: int = commands.Param(
+                description="Skip to specific position in queue", default=None, ge=1
+            ),
     ):
         """Skip the current track or to a specific position"""
         player = self.bot.lavalink.player_manager.get(inter.guild_id)
@@ -1084,9 +1079,9 @@ class MusicCog(commands.Cog):
 
     @commands.slash_command(name="volume")
     async def volume(
-        self,
-        inter: disnake.ApplicationCommandInteraction,
-        level: int = commands.Param(description="Volume level (0-100)", ge=0, le=100),
+            self,
+            inter: disnake.ApplicationCommandInteraction,
+            level: int = commands.Param(description="Volume level (0-100)", ge=0, le=100),
     ):
         """Set the playback volume"""
         player = await self.ensure_voice(inter)
@@ -1216,9 +1211,9 @@ class MusicCog(commands.Cog):
 
     @commands.slash_command(name="playnext")
     async def playnext(
-        self,
-        inter: disnake.ApplicationCommandInteraction,
-        index: int = commands.Param(description="Position in queue to play next", ge=1),
+            self,
+            inter: disnake.ApplicationCommandInteraction,
+            index: int = commands.Param(description="Position in queue to play next", ge=1),
     ):
         """Play a specific song from the queue next"""
         player = self.bot.lavalink.player_manager.get(inter.guild_id)
@@ -1262,11 +1257,11 @@ class MusicCog(commands.Cog):
 
     @commands.slash_command(name="repeat")
     async def repeat(
-        self,
-        inter: disnake.ApplicationCommandInteraction,
-        mode: str = commands.Param(
-            description="Repeat mode", choices=["off", "one", "all"], default="all"
-        ),
+            self,
+            inter: disnake.ApplicationCommandInteraction,
+            mode: str = commands.Param(
+                description="Repeat mode", choices=["off", "one", "all"], default="all"
+            ),
     ):
         """Set repeat mode (off, track, or queue)"""
         player = await self.ensure_voice(inter)
@@ -1296,9 +1291,9 @@ class MusicCog(commands.Cog):
 
     @commands.slash_command(name="remove")
     async def remove(
-        self,
-        inter: disnake.ApplicationCommandInteraction,
-        index: int = commands.Param(description="Position in queue to remove", ge=1),
+            self,
+            inter: disnake.ApplicationCommandInteraction,
+            index: int = commands.Param(description="Position in queue to remove", ge=1),
     ):
         """Remove a track from the queue"""
         player = self.bot.lavalink.player_manager.get(inter.guild_id)
@@ -1365,9 +1360,9 @@ class MusicCog(commands.Cog):
 
     @commands.slash_command(name="seek")
     async def seek(
-        self,
-        inter: disnake.ApplicationCommandInteraction,
-        position: str = commands.Param(description="Position to seek to (e.g. '1:30')"),
+            self,
+            inter: disnake.ApplicationCommandInteraction,
+            position: str = commands.Param(description="Position to seek to (e.g. '1:30')"),
     ):
         """Seek to a specific position in the current track"""
         player = self.bot.lavalink.player_manager.get(inter.guild_id)
