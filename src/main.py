@@ -1,16 +1,16 @@
-import asyncio
-import os
-import platform
-import signal
-import sys
-import traceback
+import asyncio # pylint: disable=E0401
+import os # pylint: disable=E0401
+import platform # pylint: disable=E0401
+import signal # pylint: disable=E0401
+import sys # pylint: disable=E0401
+import traceback # pylint: disable=E0401
 
-import disnake
-from colorama import Fore
-from disnake.ext import commands
+import disnake # pylint: disable=E0401
+from colorama import Fore # pylint: disable=E0401
+from disnake.ext import commands # pylint: disable=E0401
 
-from ext.logger import get_logger
-from ext.utils import CLI_Parser, Utils
+from ext.logger import get_logger # pylint: disable=E0401
+from ext.utils import CLI_Parser, Utils # pylint: disable=E0401
 
 
 class Bot(commands.InteractionBot):

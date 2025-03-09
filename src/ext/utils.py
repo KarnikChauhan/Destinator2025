@@ -4,7 +4,7 @@ import sys
 from pathlib import Path
 from typing import Any, Dict
 
-import colorama
+import colorama # pylint: disable=E0401
 
 
 class CLI_Parser:
