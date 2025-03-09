@@ -31,13 +31,12 @@ class Bot(commands.InteractionBot):
 
 
 bot = Bot(
-    owner_id=1086612851990470671,
     intents=disnake.Intents.all(),
     default_contexts=disnake.InteractionContextTypes.all(),
     default_install_types=disnake.ApplicationInstallTypes.all(),
     status=disnake.Status.online,
     activity=disnake.CustomActivity(name="Musipy"),
-    test_guilds=[1214586171519139890, 791834061152190504],
+    #test_guilds=[],
 )
 
 
