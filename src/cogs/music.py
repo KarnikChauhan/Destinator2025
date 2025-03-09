@@ -1,19 +1,19 @@
-import disnake
-import lavalink
-import random
-import re
-from disnake.ext import commands
-from ext.logger import get_logger
-from ext.utils import Utils
-from lavalink import LoadType, Node
-from lavalink.errors import ClientError
-from lavalink.events import (
-    TrackStartEvent,
-    QueueEndEvent,
-    TrackEndEvent,
-    TrackExceptionEvent,
-)
-from typing import Optional, Dict, Any, List
+import disnake # pylint: disable=C0302, C0114, E0401
+import lavalink # pylint: disable=E0401
+import random # pylint: disable=E0401
+import re # pylint: disable=E0401
+from disnake.ext import commands # pylint: disable=E0401
+from ext.logger import get_logger # pylint: disable=E0401
+from ext.utils import Utils # pylint: disable=E0401
+from lavalink import LoadType, Node # pylint: disable=E0401
+from lavalink.errors import ClientError # pylint: disable=E0401
+from lavalink.events import ( # pylint: disable=E0401
+    TrackStartEvent, # pylint: disable=E0401
+    QueueEndEvent, # pylint: disable=E0401
+    TrackEndEvent, # pylint: disable=E0401
+    TrackExceptionEvent, # pylint: disable=E0401
+) # pylint: disable=E0401
+from typing import Optional, Dict, Any, List # pylint: disable=E0401
 
 logger = get_logger("MusicCog")
 
@@ -51,10 +51,20 @@ class LavalinkVoiceClient(disnake.VoiceProtocol):
         self.lavalink = self.client.lavalink
 
     async def on_voice_server_update(self, data):
+        """
+        Called once the client recieves an update from discord's voice server
+        :param data:
+        :return:
+        """
         lavalink_data = {"t": "VOICE_SERVER_UPDATE", "d": data}
         await self.lavalink.voice_update_handler(lavalink_data)
 
     async def on_voice_state_update(self, data):
+        """
+        Called once the clinet recieves a voice state update
+        :param data:
+        :return:
+        """
         channel_id = data["channel_id"]
 
         if not channel_id:
@@ -873,7 +883,8 @@ class MusicCog(commands.Cog):
         total_length = sum(t.duration for t in player.queue)
         embed.add_field(
             name="Queue Info",
-            value=f"**{len(player.queue)}** tracks | `{self.format_time(total_length)}` total length",
+            value=f"**{len(player.queue)}** tracks | "
+        f"`{self.format_time(total_length)}` total length",
             inline=False,
         )
 
