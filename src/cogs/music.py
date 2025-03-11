@@ -194,7 +194,7 @@ class MusicCog(commands.Cog):
             )
             try:
                 await inter.response.send_message(embed=embed, ephemeral=True)
-            except:
+            except:  # pylint: disable=W0702
                 await inter.edit_original_message(content="", embed=embed)
 
         else:
