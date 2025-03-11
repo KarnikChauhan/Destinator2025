@@ -192,7 +192,10 @@ class MusicCog(commands.Cog):
                 description=str(error.original),
                 color=disnake.Color.red(),
             )
-            await inter.response.send_message(embed=embed, ephemeral=True)
+            try:
+                await inter.response.send_message(embed=embed, ephemeral=True)
+            except:
+                await inter.edit_original_message(content="", embed=embed)
 
         else:
             embed = disnake.Embed(

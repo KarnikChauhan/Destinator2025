@@ -50,7 +50,9 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 cover/
-
+application.yml
+lavalink.jar
+*.json
 # Translations
 *.mo
 *.pot
@@ -257,3 +259,4 @@ fabric.properties
 
 # Json
 *.json
+config/config.json
