@@ -29,7 +29,7 @@ plugins: # Plugin settings
       clientSecret: "secret HERE"
       countryCode: "IT" # Edit based on preference
       playlistLoadLimit: 1000 # Number of pages at 100 each
-      albumLoadLimit: 1000# Number of pages at 100 each
+      albumLoadLimit: 1000 # Number of pages at 100 each
 
 lavalink:
   plugins: # Dont change this 
