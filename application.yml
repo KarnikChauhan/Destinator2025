@@ -4,40 +4,12 @@ server: # REST and WS server
   http2:
     enabled: false
 
-plugins:
-  youtube:
-    enabled: true
-    allowSearch: true
-    allowDirectVideoIds: true
-    allowDirectPlaylistIds: true
-    clients:
-      - MUSIC
-      - ANDROID_VR
-      - WEB
-      - WEBEMBEDDED
-    email: "mail"
-    password: "password"
-
-  lavasrc:
-    sources:
-      youtube: false
-      spotify: true
-      deezer: false
-      apple: false
-    spotify:
-      clientId: "id HERE"
-      clientSecret: "secret HERE"
-      countryCode: "IT"
-      playlistLoadLimit: 1000
-      albumLoadLimit: 1000
-
 lavalink:
-  pluginsDir: "./plugins"  # ✅ Ensures Lavalink uses your own JARs
-
+  pluginsDir: "./plugins"
   server:
     password: "youshallnotpass"
     sources:
-      youtube: false  # Because we're using the youtube plugin
+      youtube: false  # Disabled because using the youtube plugin
       bandcamp: true
       soundcloud: true
       twitch: true
@@ -71,6 +43,33 @@ lavalink:
     youtubeSearchEnabled: true
     soundcloudSearchEnabled: true
     gc-warnings: true
+
+plugins:
+  youtube:
+    enabled: true
+    allowSearch: true
+    allowDirectVideoIds: true
+    allowDirectPlaylistIds: true
+    clients:
+      - MUSIC
+      - ANDROID_VR
+      - WEB
+      - WEBEMBEDDED
+    email: "mail@example.com"        # ✅ Replace with real email
+    password: "your_app_password"    # ✅ App-specific password (if using Gmail with 2FA)
+
+  lavasrc:
+    sources:
+      youtube: false
+      spotify: true
+      deezer: false
+      apple: false
+    spotify:
+      clientId: "your_spotify_client_id"
+      clientSecret: "your_spotify_client_secret"
+      countryCode: "IT"
+      playlistLoadLimit: 1000
+      albumLoadLimit: 1000
 
 metrics:
   prometheus:
