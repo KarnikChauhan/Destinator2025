@@ -54,7 +54,7 @@ plugins:
       - MUSIC
       - ANDROID_VR
       - WEB
-      - WEB_EMBEDDED  # ✅ Fixed from "WEBEMBEDDED"
+      - WEB_EMBEDDED_PLAYER  # ✅ Fixed from "WEBEMBEDDED"
     email: "your-email@gmail.com"           # ✅ Replace with real Gmail
     password: "your-app-password"           # ✅ App password from Google
 
