@@ -35,7 +35,7 @@ bot = Bot(
     default_contexts=disnake.InteractionContextTypes.all(),
     default_install_types=disnake.ApplicationInstallTypes.all(),
     status=disnake.Status.online,
-    activity=disnake.CustomActivity(name="Musipy"),
+    activity=disnake.CustomActivity(name="Destinator"),
     #test_guilds=[],
 )
 
