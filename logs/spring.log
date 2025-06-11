@@ -1,0 +1,437 @@
+2025-06-11T12:29:03.413+05:30  INFO 23116 --- [Lavalink] [main] lavalink.server.Launcher                 : Starting Launcher v4.1.1 using Java 17.0.15 with PID 23116 (C:\Users\Karnik Chauhan\Desktop\Code Stuff\Musipy\Lavalink.jar started by Karnik Chauhan in C:\Users\Karnik Chauhan\Desktop\Code Stuff\Musipy)
+2025-06-11T12:29:03.418+05:30  INFO 23116 --- [Lavalink] [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T12:29:04.360+05:30  INFO 23116 --- [Lavalink] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3d6bf653-92ea-3fde-943a-10b9f8cd696e
+2025-06-11T12:29:04.834+05:30  INFO 23116 --- [Lavalink] [main] l.server.bootstrap.PluginManager         : Downloading https://maven.lavalink.dev/releases/dev/lavalink/youtube/youtube-plugin/1.11.5/youtube-plugin-1.11.5.jar
+2025-06-11T12:29:11.824+05:30  WARN 23116 --- [Lavalink] [main] l.server.bootstrap.PluginManager         : A newer version of 'youtube-plugin' was found: '1.13.3', The current version is '1.11.5' please update the version in your configuration.
+2025-06-11T12:29:11.838+05:30  INFO 23116 --- [Lavalink] [main] l.server.bootstrap.PluginManager         : Downloading https://maven.lavalink.dev/releases/com/github/topi314/lavasrc/lavasrc-plugin/4.4.2/lavasrc-plugin-4.4.2.jar
+2025-06-11T12:29:19.411+05:30  WARN 23116 --- [Lavalink] [main] l.server.bootstrap.PluginManager         : A newer version of 'lavasrc-plugin' was found: '4.7.0', The current version is '4.4.2' please update the version in your configuration.
+2025-06-11T12:29:19.607+05:30  INFO 23116 --- [Lavalink] [main] l.server.bootstrap.PluginManager         : Loaded 'lavasrc-plugin-4.4.2.jar' (170 classes)
+2025-06-11T12:29:19.623+05:30  INFO 23116 --- [Lavalink] [main] l.server.bootstrap.PluginManager         : Loaded 'youtube-plugin-1.11.5.jar' (16 classes)
+2025-06-11T12:29:20.061+05:30  INFO 23116 --- [Lavalink] [main] lavalink.server.Launcher                 : Started Launcher in 17.52 seconds (process running for 18.222)
+2025-06-11T12:29:20.325+05:30  INFO 23116 --- [Lavalink] [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        4.1.1
+	Build time:     05.06.2025 07:37:42 UTC
+	Branch          HEAD
+	Commit:         4238202
+	Commit time:    05.06.2025 07:11:37 UTC
+	JVM:            17.0.15
+	Lavaplayer      2.2.3
+
+2025-06-11T12:29:20.339+05:30  INFO 23116 --- [Lavalink] [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T12:29:21.304+05:30  WARN 23116 --- [Lavalink] [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2025-06-11T12:29:21.355+05:30  INFO 23116 --- [Lavalink] [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2025-06-11T12:29:21.361+05:30  INFO 23116 --- [Lavalink] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1013 ms
+2025-06-11T12:29:21.493+05:30  INFO 23116 --- [Lavalink] [main] c.g.t.lavasrc.plugin.LavaSrcPlugin       : Loading LavaSrc plugin...
+2025-06-11T12:29:22.751+05:30  INFO 23116 --- [Lavalink] [main] dev.lavalink.youtube.plugin.PluginInfo   : ********************************************
+YOUTUBE-SOURCE VERSION 1.13.3 AVAILABLE
+https://github.com/lavalink-devs/youtube-source/releases/tag/1.13.3
+Update to ensure the YouTube source remains operational!
+********************************************
+2025-06-11T12:29:22.798+05:30  INFO 23116 --- [Lavalink] [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2025-06-11T12:29:23.081+05:30  INFO 23116 --- [Lavalink] [main] c.g.t.lavasrc.plugin.LavaSrcPlugin       : Registering Spotify audio source manager...
+2025-06-11T12:29:23.132+05:30  INFO 23116 --- [Lavalink] [main] d.l.youtube.plugin.YoutubePluginLoader   : YouTube source initialised with clients: WEB_REMIX, ANDROID_VR, WEB, WEB_EMBEDDED_PLAYER 
+2025-06-11T12:29:23.395+05:30  INFO 23116 --- [Lavalink] [main] l.server.config.KoeConfiguration         : OS: WINDOWS, Arch: X86_64
+2025-06-11T12:29:23.395+05:30  INFO 23116 --- [Lavalink] [main] l.server.config.KoeConfiguration         : Enabling JDA-NAS
+2025-06-11T12:29:23.402+05:30  INFO 23116 --- [Lavalink] [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: loading with filter null
+2025-06-11T12:29:23.418+05:30  INFO 23116 --- [Lavalink] [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: successfully loaded.
+2025-06-11T12:29:23.477+05:30  WARN 23116 --- [Lavalink] [main] l.server.config.SentryConfiguration      : Turning off sentry
+2025-06-11T12:29:23.863+05:30  INFO 23116 --- [Lavalink] [main] io.undertow                              : starting server: Undertow - 2.3.13.Final
+2025-06-11T12:29:23.888+05:30  INFO 23116 --- [Lavalink] [main] org.xnio                                 : XNIO version 3.8.8.Final
+2025-06-11T12:29:23.891+05:30  INFO 23116 --- [Lavalink] [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.8.Final
+2025-06-11T12:29:23.982+05:30  INFO 23116 --- [Lavalink] [main] org.jboss.threads                        : JBoss Threads version 3.5.0.Final
+2025-06-11T12:29:24.028+05:30  INFO 23116 --- [Lavalink] [main] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port 8080 (http) with context path '/'
+2025-06-11T12:29:24.202+05:30  INFO 23116 --- [Lavalink] [main] lavalink.server.Launcher                 : Started Launcher in 4.118 seconds (process running for 22.362)
+2025-06-11T12:29:24.202+05:30  INFO 23116 --- [Lavalink] [main] lavalink.server.Launcher                 : Lavalink is ready to accept connections.
+2025-06-11T12:32:04.646+05:30  INFO 23116 --- [Lavalink] [XNIO-1 task-2] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-11T12:32:04.646+05:30  INFO 23116 --- [Lavalink] [XNIO-1 task-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-11T12:32:04.646+05:30  INFO 23116 --- [Lavalink] [XNIO-1 task-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-06-11T12:32:04.677+05:30  INFO 23116 --- [Lavalink] [XNIO-1 task-2] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /[0:0:0:0:0:0:0:1]:55135
+2025-06-11T12:32:04.708+05:30  INFO 23116 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /v4/websocket, client=0:0:0:0:0:0:0:1
+2025-06-11T12:32:04.801+05:30  INFO 23116 --- [Lavalink] [XNIO-1 task-2] lavalink.server.io.SocketServer          : Connection successfully established from Lavalink.py/5.9.0
+2025-06-11T12:32:25.849+05:30  INFO 23116 --- [Lavalink] [XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:hello ji"
+2025-06-11T12:32:26.179+05:30  INFO 23116 --- [Lavalink] [XNIO-1 task-2] d.l.y.http.YoutubeAccessTokenTracker     : Updating YouTube visitor id succeeded, new one is CgtWd2lUUXVQRWV4MCj406TCBjIKCgJJThIEGgAgTDoMCAEgh6rE64K_yqRoWIvyofK9pMr0Fw%3D%3D, next update will be after 600 seconds.
+2025-06-11T12:32:26.614+05:30  INFO 23116 --- [Lavalink] [XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Loaded playlist Search results for: hello ji
+2025-06-11T12:32:26.715+05:30  INFO 23116 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=ytsearch:hello+ji, client=0:0:0:0:0:0:0:1
+2025-06-11T12:32:27.114+05:30  INFO 23116 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/8bimluv0s9jtxpm7/players/1091696068607086633, client=127.0.0.1, payload={"voice": {"sessionId": "4e062274111d108e9aaf4b48c7e587e0", "endpoint": "india10036.discord.media:443", "token": "4f7c5fd42e7cb33a"}}
+2025-06-11T12:32:27.397+05:30  INFO 23116 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/8bimluv0s9jtxpm7/players/1091696068607086633, client=0:0:0:0:0:0:0:1, payload={"track": {"encoded": "QAAA+AMAWUhlbGxvIEppISAtIFJhZ2luaSBNTVMgUmV0dXJucyBTZWFzb24gMiB8IFN1bm55IExlb25lIHwgS2FuaWthIEthcG9vciB8IE1lZXQgQnJvcywgS3VtYWFyABFaZWUgTXVzaWMgQ29tcGFueQAAAAAAAw1AAAt1dnNJeF9JSXFRQQABACtodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PXV2c0l4X0lJcVFBAQAwaHR0cHM6Ly9pLnl0aW1nLmNvbS92aS91dnNJeF9JSXFRQS9tcWRlZmF1bHQuanBnAAAHeW91dHViZQAAAAAAAAAA"}}
+2025-06-11T12:32:28.147+05:30 ERROR 23116 --- [Lavalink] [lava-daemon-pool-playback-1-thread-1] d.l.y.cipher.SignatureCipherManager      : Problematic YouTube player script /s/player/fc2a56a5/player_ias.vflset/en_GB/base.js detected (issue detected with script: no actions match). Dumped to C:\Users\KARNIK~1\AppData\Local\Temp\lavaplayer-yt-player-script2197800775678250056.js (Source version: 1.11.5)
+2025-06-11T12:32:28.150+05:30 ERROR 23116 --- [Lavalink] [lava-daemon-pool-playback-1-thread-1] c.s.d.l.t.p.LocalAudioTrackExecutor      : Error in playback of uvsIx_IIqQA
+
+com.sedmelluq.discord.lavaplayer.tools.FriendlyException: Something broke when playing the track.
+	at com.sedmelluq.discord.lavaplayer.tools.ExceptionTools.wrapUnfriendlyExceptions(ExceptionTools.java:45) ~[lavaplayer-2.2.3.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:121) ~[lavaplayer-2.2.3.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$executeTrack$2(DefaultAudioPlayerManager.java:339) ~[lavaplayer-2.2.3.jar!/:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+Caused by: java.lang.IllegalStateException: Must find action functions from script: /s/player/fc2a56a5/player_ias.vflset/en_GB/base.js
+	at dev.lavalink.youtube.cipher.SignatureCipherManager.extractFromScript(SignatureCipherManager.java:259) ~[jar:file:C:\Users\Karnik Chauhan\Desktop\Code Stuff\Musipy\.\plugins\youtube-plugin-1.11.5.jar!/:na]
+	at dev.lavalink.youtube.cipher.SignatureCipherManager.getCipherScript(SignatureCipherManager.java:219) ~[jar:file:C:\Users\Karnik Chauhan\Desktop\Code Stuff\Musipy\.\plugins\youtube-plugin-1.11.5.jar!/:na]
+	at dev.lavalink.youtube.clients.skeleton.NonMusicClient.loadTrackInfoFromInnertube(NonMusicClient.java:110) ~[jar:file:C:\Users\Karnik Chauhan\Desktop\Code Stuff\Musipy\.\plugins\youtube-plugin-1.11.5.jar!/:na]
+	at dev.lavalink.youtube.clients.skeleton.StreamingNonMusicClient.loadFormats(StreamingNonMusicClient.java:35) ~[jar:file:C:\Users\Karnik Chauhan\Desktop\Code Stuff\Musipy\.\plugins\youtube-plugin-1.11.5.jar!/:na]
+	at dev.lavalink.youtube.track.YoutubeAudioTrack.loadBestFormatWithUrl(YoutubeAudioTrack.java:194) ~[jar:file:C:\Users\Karnik Chauhan\Desktop\Code Stuff\Musipy\.\plugins\youtube-plugin-1.11.5.jar!/:na]
+	at dev.lavalink.youtube.track.YoutubeAudioTrack.processWithClient(YoutubeAudioTrack.java:131) ~[jar:file:C:\Users\Karnik Chauhan\Desktop\Code Stuff\Musipy\.\plugins\youtube-plugin-1.11.5.jar!/:na]
+	at dev.lavalink.youtube.track.YoutubeAudioTrack.process(YoutubeAudioTrack.java:79) ~[jar:file:C:\Users\Karnik Chauhan\Desktop\Code Stuff\Musipy\.\plugins\youtube-plugin-1.11.5.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:109) ~[lavaplayer-2.2.3.jar!/:na]
+	... 4 common frames omitted
+	Suppressed: dev.lavalink.youtube.ClientInformation: 
+  yts.version: 1.11.5
+  client.identifier: ANDROID_VR
+  client.options: ClientOptions{playback=true, playlistLoading=true, videoLoading=true, searching=true}
+
+2025-06-11T12:32:28.193+05:30  INFO 23116 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/8bimluv0s9jtxpm7/players/1091696068607086633, client=127.0.0.1, payload={"track": {"encoded": null}}
+2025-06-11T12:32:28.204+05:30  INFO 23116 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : DELETE /v4/sessions/8bimluv0s9jtxpm7/players/1091696068607086633, client=0:0:0:0:0:0:0:1
+2025-06-11T12:33:04.358+05:30  INFO 23116 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:my zindagi"
+2025-06-11T12:33:04.921+05:30  INFO 23116 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Loaded playlist Search results for: my zindagi
+2025-06-11T12:33:04.933+05:30  INFO 23116 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=ytsearch:my+zindagi, client=0:0:0:0:0:0:0:1
+2025-06-11T12:33:05.107+05:30  INFO 23116 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/8bimluv0s9jtxpm7/players/1091696068607086633, client=127.0.0.1, payload={"voice": {"sessionId": "4e062274111d108e9aaf4b48c7e587e0", "endpoint": "india10036.discord.media:443", "token": "497af1a481ddf8c5"}}
+2025-06-11T12:33:05.471+05:30  INFO 23116 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/8bimluv0s9jtxpm7/players/1091696068607086633, client=0:0:0:0:0:0:0:1, payload={"track": {"encoded": "QAAA/wMAX0xvdmUgWW91IFppbmRhZ2kgRnVsbCBWaWRlbyAtIERlYXIgWmluZGFnaSB8IEFsaWEgQmhhdHQgfFNoYWggUnVraCBLaGFuIHxKYXNsZWVuIFJveWFsIHwgQW1pdCBUABJTb255TXVzaWNJbmRpYVZFVk8AAAAAAAPYYAALYnc3YlZwSTVWY00AAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1idzdiVnBJNVZjTQEAMGh0dHBzOi8vaS55dGltZy5jb20vdmkvYnc3YlZwSTVWY00vbXFkZWZhdWx0LmpwZwAAB3lvdXR1YmUAAAAAAAAAAA=="}}
+2025-06-11T12:33:05.641+05:30 ERROR 23116 --- [Lavalink] [lava-daemon-pool-playback-1-thread-1] c.s.d.l.t.p.LocalAudioTrackExecutor      : Error in playback of bw7bVpI5VcM
+
+com.sedmelluq.discord.lavaplayer.tools.FriendlyException: Something broke when playing the track.
+	at com.sedmelluq.discord.lavaplayer.tools.ExceptionTools.wrapUnfriendlyExceptions(ExceptionTools.java:45) ~[lavaplayer-2.2.3.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:121) ~[lavaplayer-2.2.3.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$executeTrack$2(DefaultAudioPlayerManager.java:339) ~[lavaplayer-2.2.3.jar!/:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+Caused by: java.lang.IllegalStateException: Must find action functions from script: /s/player/fc2a56a5/player_ias.vflset/en_GB/base.js
+	at dev.lavalink.youtube.cipher.SignatureCipherManager.extractFromScript(SignatureCipherManager.java:259) ~[jar:file:C:\Users\Karnik Chauhan\Desktop\Code Stuff\Musipy\.\plugins\youtube-plugin-1.11.5.jar!/:na]
+	at dev.lavalink.youtube.cipher.SignatureCipherManager.getCipherScript(SignatureCipherManager.java:219) ~[jar:file:C:\Users\Karnik Chauhan\Desktop\Code Stuff\Musipy\.\plugins\youtube-plugin-1.11.5.jar!/:na]
+	at dev.lavalink.youtube.clients.skeleton.NonMusicClient.loadTrackInfoFromInnertube(NonMusicClient.java:110) ~[jar:file:C:\Users\Karnik Chauhan\Desktop\Code Stuff\Musipy\.\plugins\youtube-plugin-1.11.5.jar!/:na]
+	at dev.lavalink.youtube.clients.skeleton.StreamingNonMusicClient.loadFormats(StreamingNonMusicClient.java:35) ~[jar:file:C:\Users\Karnik Chauhan\Desktop\Code Stuff\Musipy\.\plugins\youtube-plugin-1.11.5.jar!/:na]
+	at dev.lavalink.youtube.track.YoutubeAudioTrack.loadBestFormatWithUrl(YoutubeAudioTrack.java:194) ~[jar:file:C:\Users\Karnik Chauhan\Desktop\Code Stuff\Musipy\.\plugins\youtube-plugin-1.11.5.jar!/:na]
+	at dev.lavalink.youtube.track.YoutubeAudioTrack.processWithClient(YoutubeAudioTrack.java:131) ~[jar:file:C:\Users\Karnik Chauhan\Desktop\Code Stuff\Musipy\.\plugins\youtube-plugin-1.11.5.jar!/:na]
+	at dev.lavalink.youtube.track.YoutubeAudioTrack.process(YoutubeAudioTrack.java:79) ~[jar:file:C:\Users\Karnik Chauhan\Desktop\Code Stuff\Musipy\.\plugins\youtube-plugin-1.11.5.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:109) ~[lavaplayer-2.2.3.jar!/:na]
+	... 4 common frames omitted
+	Suppressed: dev.lavalink.youtube.ClientInformation: 
+  yts.version: 1.11.5
+  client.identifier: ANDROID_VR
+  client.options: ClientOptions{playback=true, playlistLoading=true, videoLoading=true, searching=true}
+
+2025-06-11T12:33:05.662+05:30  INFO 23116 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/8bimluv0s9jtxpm7/players/1091696068607086633, client=127.0.0.1, payload={"track": {"encoded": null}}
+2025-06-11T12:33:05.669+05:30  INFO 23116 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : DELETE /v4/sessions/8bimluv0s9jtxpm7/players/1091696068607086633, client=0:0:0:0:0:0:0:1
+2025-06-11T12:34:50.067+05:30  INFO 23116 --- [Lavalink] [XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:sporify song"
+2025-06-11T12:34:50.820+05:30  INFO 23116 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/8bimluv0s9jtxpm7/players/1091696068607086633, client=127.0.0.1, payload={"voice": {"sessionId": "4e062274111d108e9aaf4b48c7e587e0", "endpoint": "india10036.discord.media:443", "token": "0041e656c420be55"}}
+2025-06-11T12:34:50.949+05:30  INFO 23116 --- [Lavalink] [XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Loaded playlist Search results for: sporify song
+2025-06-11T12:34:50.952+05:30  INFO 23116 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=ytsearch:sporify+song, client=0:0:0:0:0:0:0:1
+2025-06-11T12:34:51.405+05:30  INFO 23116 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/8bimluv0s9jtxpm7/players/1091696068607086633, client=127.0.0.1, payload={"track": {"encoded": "QAAAxAMAJ2NyOm5vdCBtZSAjc3BvdGlmeSAjYXVkaW8gI2x5cmljcyAjc29uZwAPVmljdG9yaWHCpSBMaWZlAAAAAAAAVfAAC0VnZWE0WWVwTnRVAAEAK2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9RWdlYTRZZXBOdFUBADBodHRwczovL2kueXRpbWcuY29tL3ZpL0VnZWE0WWVwTnRVL21xZGVmYXVsdC5qcGcAAAd5b3V0dWJlAAAAAAAAAAA="}}
+2025-06-11T12:34:51.671+05:30 ERROR 23116 --- [Lavalink] [lava-daemon-pool-playback-1-thread-1] c.s.d.l.t.p.LocalAudioTrackExecutor      : Error in playback of Egea4YepNtU
+
+com.sedmelluq.discord.lavaplayer.tools.FriendlyException: Something broke when playing the track.
+	at com.sedmelluq.discord.lavaplayer.tools.ExceptionTools.wrapUnfriendlyExceptions(ExceptionTools.java:45) ~[lavaplayer-2.2.3.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:121) ~[lavaplayer-2.2.3.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$executeTrack$2(DefaultAudioPlayerManager.java:339) ~[lavaplayer-2.2.3.jar!/:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+Caused by: java.lang.IllegalStateException: Must find action functions from script: /s/player/fc2a56a5/player_ias.vflset/en_GB/base.js
+	at dev.lavalink.youtube.cipher.SignatureCipherManager.extractFromScript(SignatureCipherManager.java:259) ~[jar:file:C:\Users\Karnik Chauhan\Desktop\Code Stuff\Musipy\.\plugins\youtube-plugin-1.11.5.jar!/:na]
+	at dev.lavalink.youtube.cipher.SignatureCipherManager.getCipherScript(SignatureCipherManager.java:219) ~[jar:file:C:\Users\Karnik Chauhan\Desktop\Code Stuff\Musipy\.\plugins\youtube-plugin-1.11.5.jar!/:na]
+	at dev.lavalink.youtube.clients.skeleton.NonMusicClient.loadTrackInfoFromInnertube(NonMusicClient.java:110) ~[jar:file:C:\Users\Karnik Chauhan\Desktop\Code Stuff\Musipy\.\plugins\youtube-plugin-1.11.5.jar!/:na]
+	at dev.lavalink.youtube.clients.skeleton.StreamingNonMusicClient.loadFormats(StreamingNonMusicClient.java:35) ~[jar:file:C:\Users\Karnik Chauhan\Desktop\Code Stuff\Musipy\.\plugins\youtube-plugin-1.11.5.jar!/:na]
+	at dev.lavalink.youtube.track.YoutubeAudioTrack.loadBestFormatWithUrl(YoutubeAudioTrack.java:194) ~[jar:file:C:\Users\Karnik Chauhan\Desktop\Code Stuff\Musipy\.\plugins\youtube-plugin-1.11.5.jar!/:na]
+	at dev.lavalink.youtube.track.YoutubeAudioTrack.processWithClient(YoutubeAudioTrack.java:131) ~[jar:file:C:\Users\Karnik Chauhan\Desktop\Code Stuff\Musipy\.\plugins\youtube-plugin-1.11.5.jar!/:na]
+	at dev.lavalink.youtube.track.YoutubeAudioTrack.process(YoutubeAudioTrack.java:79) ~[jar:file:C:\Users\Karnik Chauhan\Desktop\Code Stuff\Musipy\.\plugins\youtube-plugin-1.11.5.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:109) ~[lavaplayer-2.2.3.jar!/:na]
+	... 4 common frames omitted
+	Suppressed: dev.lavalink.youtube.ClientInformation: 
+  yts.version: 1.11.5
+  client.identifier: ANDROID_VR
+  client.options: ClientOptions{playback=true, playlistLoading=true, videoLoading=true, searching=true}
+
+2025-06-11T12:34:51.681+05:30  INFO 23116 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/8bimluv0s9jtxpm7/players/1091696068607086633, client=0:0:0:0:0:0:0:1, payload={"track": {"encoded": null}}
+2025-06-11T12:34:51.690+05:30  INFO 23116 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : DELETE /v4/sessions/8bimluv0s9jtxpm7/players/1091696068607086633, client=127.0.0.1
+2025-06-11T12:35:12.447+05:30  INFO 23116 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/8bimluv0s9jtxpm7/players/1091696068607086633, client=0:0:0:0:0:0:0:1, payload={"volume": 5}
+2025-06-11T12:35:13.141+05:30  INFO 23116 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/8bimluv0s9jtxpm7/players/1091696068607086633, client=0:0:0:0:0:0:0:1, payload={"voice": {"sessionId": "4e062274111d108e9aaf4b48c7e587e0", "endpoint": "india10036.discord.media:443", "token": "dd7f855d7ce2a807"}}
+2025-06-11T12:39:08.333+05:30  INFO 23116 --- [Lavalink] [XNIO-1 I/O-6] lavalink.server.io.SocketServer          : Connection closed from /[0:0:0:0:0:0:0:1]:55135 with id 8bimluv0s9jtxpm7 -- CloseStatus[code=1006, reason=]
+2025-06-11T12:39:08.333+05:30  INFO 23116 --- [Lavalink] [XNIO-1 I/O-6] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2025-06-11T12:39:33.781+05:30  INFO 11988 --- [Lavalink] [main] lavalink.server.Launcher                 : Starting Launcher v4.1.1 using Java 17.0.15 with PID 11988 (C:\Users\Karnik Chauhan\Desktop\Code Stuff\Musipy\Lavalink.jar started by Karnik Chauhan in C:\Users\Karnik Chauhan\Desktop\Code Stuff\Musipy)
+2025-06-11T12:39:33.790+05:30  INFO 11988 --- [Lavalink] [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T12:39:34.639+05:30  INFO 11988 --- [Lavalink] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3d6bf653-92ea-3fde-943a-10b9f8cd696e
+2025-06-11T12:39:35.124+05:30  INFO 11988 --- [Lavalink] [main] l.server.bootstrap.PluginManager         : Found plugin 'lavasrc-plugin' version '4.4.2'
+2025-06-11T12:39:35.124+05:30  INFO 11988 --- [Lavalink] [main] l.server.bootstrap.PluginManager         : Found plugin 'youtube-plugin' version '1.13.3'
+2025-06-11T12:39:35.132+05:30  INFO 11988 --- [Lavalink] [main] l.server.bootstrap.PluginManager         : Deleted .\plugins\youtube-plugin-1.13.3.jar (new version: 1.11.5)
+2025-06-11T12:39:35.132+05:30  INFO 11988 --- [Lavalink] [main] l.server.bootstrap.PluginManager         : Downloading https://maven.lavalink.dev/releases/dev/lavalink/youtube/youtube-plugin/1.11.5/youtube-plugin-1.11.5.jar
+2025-06-11T12:39:42.277+05:30  WARN 11988 --- [Lavalink] [main] l.server.bootstrap.PluginManager         : A newer version of 'youtube-plugin' was found: '1.13.3', The current version is '1.11.5' please update the version in your configuration.
+2025-06-11T12:39:42.457+05:30  WARN 11988 --- [Lavalink] [main] l.server.bootstrap.PluginManager         : A newer version of 'lavasrc-plugin' was found: '4.7.0', The current version is '4.4.2' please update the version in your configuration.
+2025-06-11T12:39:42.714+05:30  INFO 11988 --- [Lavalink] [main] l.server.bootstrap.PluginManager         : Loaded 'lavasrc-plugin-4.4.2.jar' (170 classes)
+2025-06-11T12:39:42.730+05:30  INFO 11988 --- [Lavalink] [main] l.server.bootstrap.PluginManager         : Loaded 'youtube-plugin-1.11.5.jar' (16 classes)
+2025-06-11T12:39:43.185+05:30  INFO 11988 --- [Lavalink] [main] lavalink.server.Launcher                 : Started Launcher in 10.287 seconds (process running for 11.209)
+2025-06-11T12:39:43.457+05:30  INFO 11988 --- [Lavalink] [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        4.1.1
+	Build time:     05.06.2025 07:37:42 UTC
+	Branch          HEAD
+	Commit:         4238202
+	Commit time:    05.06.2025 07:11:37 UTC
+	JVM:            17.0.15
+	Lavaplayer      2.2.3
+
+2025-06-11T12:39:43.471+05:30  INFO 11988 --- [Lavalink] [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T12:39:44.471+05:30  WARN 11988 --- [Lavalink] [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2025-06-11T12:39:44.519+05:30  INFO 11988 --- [Lavalink] [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2025-06-11T12:39:44.521+05:30  INFO 11988 --- [Lavalink] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1040 ms
+2025-06-11T12:39:44.661+05:30  INFO 11988 --- [Lavalink] [main] c.g.t.lavasrc.plugin.LavaSrcPlugin       : Loading LavaSrc plugin...
+2025-06-11T12:39:45.851+05:30  INFO 11988 --- [Lavalink] [main] dev.lavalink.youtube.plugin.PluginInfo   : ********************************************
+YOUTUBE-SOURCE VERSION 1.13.3 AVAILABLE
+https://github.com/lavalink-devs/youtube-source/releases/tag/1.13.3
+Update to ensure the YouTube source remains operational!
+********************************************
+2025-06-11T12:39:45.902+05:30  INFO 11988 --- [Lavalink] [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2025-06-11T12:39:46.470+05:30  INFO 11988 --- [Lavalink] [main] c.g.t.lavasrc.plugin.LavaSrcPlugin       : Registering Spotify audio source manager...
+2025-06-11T12:39:46.518+05:30  INFO 11988 --- [Lavalink] [main] d.l.youtube.plugin.YoutubePluginLoader   : YouTube source initialised with clients: WEB_REMIX, ANDROID_VR, WEB, WEB_EMBEDDED_PLAYER 
+2025-06-11T12:39:46.767+05:30  INFO 11988 --- [Lavalink] [main] l.server.config.KoeConfiguration         : OS: WINDOWS, Arch: X86_64
+2025-06-11T12:39:46.767+05:30  INFO 11988 --- [Lavalink] [main] l.server.config.KoeConfiguration         : Enabling JDA-NAS
+2025-06-11T12:39:46.773+05:30  INFO 11988 --- [Lavalink] [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: loading with filter null
+2025-06-11T12:39:46.781+05:30  INFO 11988 --- [Lavalink] [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: successfully loaded.
+2025-06-11T12:39:46.828+05:30  WARN 11988 --- [Lavalink] [main] l.server.config.SentryConfiguration      : Turning off sentry
+2025-06-11T12:39:47.315+05:30  INFO 11988 --- [Lavalink] [main] io.undertow                              : starting server: Undertow - 2.3.13.Final
+2025-06-11T12:39:47.333+05:30  INFO 11988 --- [Lavalink] [main] org.xnio                                 : XNIO version 3.8.8.Final
+2025-06-11T12:39:47.349+05:30  INFO 11988 --- [Lavalink] [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.8.Final
+2025-06-11T12:39:47.421+05:30  INFO 11988 --- [Lavalink] [main] org.jboss.threads                        : JBoss Threads version 3.5.0.Final
+2025-06-11T12:39:47.474+05:30  INFO 11988 --- [Lavalink] [main] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port 8080 (http) with context path '/'
+2025-06-11T12:39:47.681+05:30  INFO 11988 --- [Lavalink] [main] lavalink.server.Launcher                 : Started Launcher in 4.481 seconds (process running for 15.707)
+2025-06-11T12:39:47.681+05:30  INFO 11988 --- [Lavalink] [main] lavalink.server.Launcher                 : Lavalink is ready to accept connections.
+2025-06-11T12:40:22.410+05:30  INFO 11988 --- [Lavalink] [XNIO-1 task-2] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-11T12:40:22.410+05:30  INFO 11988 --- [Lavalink] [XNIO-1 task-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-11T12:40:22.416+05:30  INFO 11988 --- [Lavalink] [XNIO-1 task-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-06-11T12:40:22.462+05:30  INFO 11988 --- [Lavalink] [XNIO-1 task-2] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /[0:0:0:0:0:0:0:1]:55249
+2025-06-11T12:40:22.490+05:30  INFO 11988 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /v4/websocket, client=0:0:0:0:0:0:0:1
+2025-06-11T12:40:22.591+05:30  INFO 11988 --- [Lavalink] [XNIO-1 task-2] lavalink.server.io.SocketServer          : Connection successfully established from Lavalink.py/5.9.0
+2025-06-11T12:40:53.548+05:30  INFO 11988 --- [Lavalink] [XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:dhama"
+2025-06-11T12:40:53.779+05:30  INFO 11988 --- [Lavalink] [XNIO-1 task-2] d.l.y.http.YoutubeAccessTokenTracker     : Updating YouTube visitor id succeeded, new one is Cgs0YUlna0NPWmp6byjz16TCBjIKCgJJThIEGgAgPzoMCAEgo8Cq9rT-yqRoWP2I8JnDlMqN0QE%3D, next update will be after 600 seconds.
+2025-06-11T12:40:54.211+05:30  INFO 11988 --- [Lavalink] [XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Loaded playlist Search results for: dhama
+2025-06-11T12:40:54.317+05:30  INFO 11988 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=ytsearch:dhama, client=0:0:0:0:0:0:0:1
+2025-06-11T12:40:54.801+05:30  INFO 11988 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/08nw9zp1a7iv2bry/players/1091696068607086633, client=127.0.0.1, payload={"voice": {"sessionId": "3115efa5f7b0873ead720c7996bc5e91", "endpoint": "india10036.discord.media:443", "token": "4fee009c42fa08ef"}}
+2025-06-11T12:40:54.808+05:30  INFO 11988 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/08nw9zp1a7iv2bry/players/1091696068607086633, client=0:0:0:0:0:0:0:1, payload={"track": {"encoded": "QAABHwMAhFV0dGFyIGt1bWFyIFN1cGVyaGl0IE1vdmllIC0g4KSh4KS+4KSV4KWCIOCkp+CkvuCkruCkviDgpJXgpL4g4KSh4KS+4KSV4KWN4KSV4KS+IHwgRGFra2EgfCA0ayBOZXcgSGFyeWFudmkgRmlsbSAyMDIzIHwgQ2hhbmRhIENpbmVtYQANQ2hhbmRhIENpbmVtYQAAAAAAQaDIAAs0TjF5TTRHcDljYwABACtodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PTROMXlNNEdwOWNjAQAwaHR0cHM6Ly9pLnl0aW1nLmNvbS92aS80TjF5TTRHcDljYy9tcWRlZmF1bHQuanBnAAAHeW91dHViZQAAAAAAAAAA"}}
+2025-06-11T12:40:55.629+05:30 ERROR 11988 --- [Lavalink] [lava-daemon-pool-playback-1-thread-1] d.l.y.cipher.SignatureCipherManager      : Problematic YouTube player script /s/player/fc2a56a5/player_ias.vflset/en_GB/base.js detected (issue detected with script: no actions match). Dumped to C:\Users\KARNIK~1\AppData\Local\Temp\lavaplayer-yt-player-script4389666825872461897.js (Source version: 1.11.5)
+2025-06-11T12:40:55.629+05:30 ERROR 11988 --- [Lavalink] [lava-daemon-pool-playback-1-thread-1] c.s.d.l.t.p.LocalAudioTrackExecutor      : Error in playback of 4N1yM4Gp9cc
+
+com.sedmelluq.discord.lavaplayer.tools.FriendlyException: Something broke when playing the track.
+	at com.sedmelluq.discord.lavaplayer.tools.ExceptionTools.wrapUnfriendlyExceptions(ExceptionTools.java:45) ~[lavaplayer-2.2.3.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:121) ~[lavaplayer-2.2.3.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$executeTrack$2(DefaultAudioPlayerManager.java:339) ~[lavaplayer-2.2.3.jar!/:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+Caused by: java.lang.IllegalStateException: Must find action functions from script: /s/player/fc2a56a5/player_ias.vflset/en_GB/base.js
+	at dev.lavalink.youtube.cipher.SignatureCipherManager.extractFromScript(SignatureCipherManager.java:259) ~[jar:file:C:\Users\Karnik Chauhan\Desktop\Code Stuff\Musipy\.\plugins\youtube-plugin-1.11.5.jar!/:na]
+	at dev.lavalink.youtube.cipher.SignatureCipherManager.getCipherScript(SignatureCipherManager.java:219) ~[jar:file:C:\Users\Karnik Chauhan\Desktop\Code Stuff\Musipy\.\plugins\youtube-plugin-1.11.5.jar!/:na]
+	at dev.lavalink.youtube.clients.skeleton.NonMusicClient.loadTrackInfoFromInnertube(NonMusicClient.java:110) ~[jar:file:C:\Users\Karnik Chauhan\Desktop\Code Stuff\Musipy\.\plugins\youtube-plugin-1.11.5.jar!/:na]
+	at dev.lavalink.youtube.clients.skeleton.StreamingNonMusicClient.loadFormats(StreamingNonMusicClient.java:35) ~[jar:file:C:\Users\Karnik Chauhan\Desktop\Code Stuff\Musipy\.\plugins\youtube-plugin-1.11.5.jar!/:na]
+	at dev.lavalink.youtube.track.YoutubeAudioTrack.loadBestFormatWithUrl(YoutubeAudioTrack.java:194) ~[jar:file:C:\Users\Karnik Chauhan\Desktop\Code Stuff\Musipy\.\plugins\youtube-plugin-1.11.5.jar!/:na]
+	at dev.lavalink.youtube.track.YoutubeAudioTrack.processWithClient(YoutubeAudioTrack.java:131) ~[jar:file:C:\Users\Karnik Chauhan\Desktop\Code Stuff\Musipy\.\plugins\youtube-plugin-1.11.5.jar!/:na]
+	at dev.lavalink.youtube.track.YoutubeAudioTrack.process(YoutubeAudioTrack.java:79) ~[jar:file:C:\Users\Karnik Chauhan\Desktop\Code Stuff\Musipy\.\plugins\youtube-plugin-1.11.5.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:109) ~[lavaplayer-2.2.3.jar!/:na]
+	... 4 common frames omitted
+	Suppressed: dev.lavalink.youtube.ClientInformation: 
+  yts.version: 1.11.5
+  client.identifier: ANDROID_VR
+  client.options: ClientOptions{playback=true, playlistLoading=true, videoLoading=true, searching=true}
+
+2025-06-11T12:40:55.655+05:30  INFO 11988 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/08nw9zp1a7iv2bry/players/1091696068607086633, client=127.0.0.1, payload={"track": {"encoded": null}}
+2025-06-11T12:40:55.671+05:30  INFO 11988 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : DELETE /v4/sessions/08nw9zp1a7iv2bry/players/1091696068607086633, client=0:0:0:0:0:0:0:1
+2025-06-11T12:42:25.459+05:30  INFO 6056 --- [Lavalink] [main] lavalink.server.Launcher                 : Starting Launcher v4.1.1 using Java 17.0.15 with PID 6056 (C:\Users\Karnik Chauhan\Desktop\Code Stuff\Musipy\Lavalink.jar started by Karnik Chauhan in C:\Users\Karnik Chauhan\Desktop\Code Stuff\Musipy)
+2025-06-11T12:42:25.466+05:30  INFO 6056 --- [Lavalink] [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T12:42:26.439+05:30  INFO 6056 --- [Lavalink] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3d6bf653-92ea-3fde-943a-10b9f8cd696e
+2025-06-11T12:42:27.030+05:30  INFO 6056 --- [Lavalink] [main] l.server.bootstrap.PluginManager         : Found plugin 'lavasrc-plugin' version '4.4.2'
+2025-06-11T12:42:27.031+05:30  INFO 6056 --- [Lavalink] [main] l.server.bootstrap.PluginManager         : Found plugin 'youtube-plugin' version '1.13.3'
+2025-06-11T12:42:27.038+05:30  INFO 6056 --- [Lavalink] [main] l.server.bootstrap.PluginManager         : Deleted .\plugins\youtube-plugin-1.13.3.jar (new version: 1.11.5)
+2025-06-11T12:42:27.038+05:30  INFO 6056 --- [Lavalink] [main] l.server.bootstrap.PluginManager         : Downloading https://maven.lavalink.dev/releases/dev/lavalink/youtube/youtube-plugin/1.11.5/youtube-plugin-1.11.5.jar
+2025-06-11T12:42:33.800+05:30  WARN 6056 --- [Lavalink] [main] l.server.bootstrap.PluginManager         : A newer version of 'youtube-plugin' was found: '1.13.3', The current version is '1.11.5' please update the version in your configuration.
+2025-06-11T12:42:33.990+05:30  WARN 6056 --- [Lavalink] [main] l.server.bootstrap.PluginManager         : A newer version of 'lavasrc-plugin' was found: '4.7.0', The current version is '4.4.2' please update the version in your configuration.
+2025-06-11T12:42:34.248+05:30  INFO 6056 --- [Lavalink] [main] l.server.bootstrap.PluginManager         : Loaded 'lavasrc-plugin-4.4.2.jar' (170 classes)
+2025-06-11T12:42:34.269+05:30  INFO 6056 --- [Lavalink] [main] l.server.bootstrap.PluginManager         : Loaded 'youtube-plugin-1.11.5.jar' (16 classes)
+2025-06-11T12:42:34.741+05:30  INFO 6056 --- [Lavalink] [main] lavalink.server.Launcher                 : Started Launcher in 10.293 seconds (process running for 11.056)
+2025-06-11T12:42:35.111+05:30  INFO 6056 --- [Lavalink] [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        4.1.1
+	Build time:     05.06.2025 07:37:42 UTC
+	Branch          HEAD
+	Commit:         4238202
+	Commit time:    05.06.2025 07:11:37 UTC
+	JVM:            17.0.15
+	Lavaplayer      2.2.3
+
+2025-06-11T12:42:35.129+05:30  INFO 6056 --- [Lavalink] [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T12:42:36.369+05:30  WARN 6056 --- [Lavalink] [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2025-06-11T12:42:36.416+05:30  INFO 6056 --- [Lavalink] [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2025-06-11T12:42:36.416+05:30  INFO 6056 --- [Lavalink] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1277 ms
+2025-06-11T12:42:36.535+05:30  INFO 6056 --- [Lavalink] [main] c.g.t.lavasrc.plugin.LavaSrcPlugin       : Loading LavaSrc plugin...
+2025-06-11T12:42:37.702+05:30  INFO 6056 --- [Lavalink] [main] dev.lavalink.youtube.plugin.PluginInfo   : ********************************************
+YOUTUBE-SOURCE VERSION 1.13.3 AVAILABLE
+https://github.com/lavalink-devs/youtube-source/releases/tag/1.13.3
+Update to ensure the YouTube source remains operational!
+********************************************
+2025-06-11T12:42:37.751+05:30  INFO 6056 --- [Lavalink] [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2025-06-11T12:42:38.090+05:30  INFO 6056 --- [Lavalink] [main] c.g.t.lavasrc.plugin.LavaSrcPlugin       : Registering Spotify audio source manager...
+2025-06-11T12:42:38.171+05:30  INFO 6056 --- [Lavalink] [main] d.l.youtube.plugin.YoutubePluginLoader   : YouTube source initialised with clients: WEB_REMIX, ANDROID_VR, WEB, WEB_EMBEDDED_PLAYER 
+2025-06-11T12:42:38.511+05:30  INFO 6056 --- [Lavalink] [main] l.server.config.KoeConfiguration         : OS: WINDOWS, Arch: X86_64
+2025-06-11T12:42:38.513+05:30  INFO 6056 --- [Lavalink] [main] l.server.config.KoeConfiguration         : Enabling JDA-NAS
+2025-06-11T12:42:38.524+05:30  INFO 6056 --- [Lavalink] [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: loading with filter null
+2025-06-11T12:42:38.537+05:30  INFO 6056 --- [Lavalink] [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: successfully loaded.
+2025-06-11T12:42:38.613+05:30  WARN 6056 --- [Lavalink] [main] l.server.config.SentryConfiguration      : Turning off sentry
+2025-06-11T12:42:39.087+05:30  INFO 6056 --- [Lavalink] [main] io.undertow                              : starting server: Undertow - 2.3.13.Final
+2025-06-11T12:42:39.107+05:30  INFO 6056 --- [Lavalink] [main] org.xnio                                 : XNIO version 3.8.8.Final
+2025-06-11T12:42:39.121+05:30  INFO 6056 --- [Lavalink] [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.8.Final
+2025-06-11T12:42:39.189+05:30  INFO 6056 --- [Lavalink] [main] org.jboss.threads                        : JBoss Threads version 3.5.0.Final
+2025-06-11T12:42:39.251+05:30  INFO 6056 --- [Lavalink] [main] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port 8080 (http) with context path '/'
+2025-06-11T12:42:39.465+05:30  INFO 6056 --- [Lavalink] [main] lavalink.server.Launcher                 : Started Launcher in 4.69 seconds (process running for 15.78)
+2025-06-11T12:42:39.467+05:30  INFO 6056 --- [Lavalink] [main] lavalink.server.Launcher                 : Lavalink is ready to accept connections.
+2025-06-11T12:42:58.068+05:30  INFO 6056 --- [Lavalink] [XNIO-1 task-2] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-11T12:42:58.068+05:30  INFO 6056 --- [Lavalink] [XNIO-1 task-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-11T12:42:58.073+05:30  INFO 6056 --- [Lavalink] [XNIO-1 task-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2025-06-11T12:42:58.111+05:30  INFO 6056 --- [Lavalink] [XNIO-1 task-2] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /[0:0:0:0:0:0:0:1]:55275
+2025-06-11T12:42:58.137+05:30  INFO 6056 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /v4/websocket, client=0:0:0:0:0:0:0:1
+2025-06-11T12:42:58.213+05:30  INFO 6056 --- [Lavalink] [XNIO-1 task-2] lavalink.server.io.SocketServer          : Connection successfully established from Lavalink.py/5.9.0
+2025-06-11T12:43:02.453+05:30  INFO 6056 --- [Lavalink] [XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:jai"
+2025-06-11T12:43:02.761+05:30  INFO 6056 --- [Lavalink] [XNIO-1 task-2] d.l.y.http.YoutubeAccessTokenTracker     : Updating YouTube visitor id succeeded, new one is CgtmVF8tYlc2ajFldyj02KTCBjIKCgJJThIEGgAgFjoMCAEgnefZmMKOy6RoWMjRws3N6cS_Ww%3D%3D, next update will be after 600 seconds.
+2025-06-11T12:43:03.533+05:30  INFO 6056 --- [Lavalink] [XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Loaded playlist Search results for: jai
+2025-06-11T12:43:03.637+05:30  INFO 6056 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=ytsearch:jai, client=127.0.0.1
+2025-06-11T12:43:03.663+05:30  INFO 6056 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/qfhmw2yo4jtped5b/players/1091696068607086633, client=0:0:0:0:0:0:0:1, payload={"voice": {"sessionId": "e7da2a2bb3b8518fdd535f479a3e468b", "endpoint": "india10036.discord.media:443", "token": "b9c08369144c65e6"}}
+2025-06-11T12:43:04.171+05:30  INFO 6056 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/qfhmw2yo4jtped5b/players/1091696068607086633, client=127.0.0.1, payload={"track": {"encoded": "QAAA9gMAVUphaSBIbyBKYWkgSG8gU2hhbmthcmEgfCBIYW5zcmFqIFJhZ2h1d2Fuc2hpIHwgT2ZmaWNpYWwgTXVzaWMgVmlkZW8gfCBCYWJhIEtlZGFyZGhhbWkAE0hhbnNyYWogUmFnaHV3YW5zaGkAAAAAAASrUAALUGVUbTk0aVRSV1EAAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1QZVRtOTRpVFJXUQEAMGh0dHBzOi8vaS55dGltZy5jb20vdmkvUGVUbTk0aVRSV1EvbXFkZWZhdWx0LmpwZwAAB3lvdXR1YmUAAAAAAAAAAA=="}}
+2025-06-11T12:43:04.967+05:30 ERROR 6056 --- [Lavalink] [lava-daemon-pool-playback-1-thread-1] d.l.y.cipher.SignatureCipherManager      : Problematic YouTube player script /s/player/fc2a56a5/player_ias.vflset/en_GB/base.js detected (issue detected with script: no actions match). Dumped to C:\Users\KARNIK~1\AppData\Local\Temp\lavaplayer-yt-player-script1225085989997103574.js (Source version: 1.11.5)
+2025-06-11T12:43:04.967+05:30 ERROR 6056 --- [Lavalink] [lava-daemon-pool-playback-1-thread-1] c.s.d.l.t.p.LocalAudioTrackExecutor      : Error in playback of PeTm94iTRWQ
+
+com.sedmelluq.discord.lavaplayer.tools.FriendlyException: Something broke when playing the track.
+	at com.sedmelluq.discord.lavaplayer.tools.ExceptionTools.wrapUnfriendlyExceptions(ExceptionTools.java:45) ~[lavaplayer-2.2.3.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:121) ~[lavaplayer-2.2.3.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$executeTrack$2(DefaultAudioPlayerManager.java:339) ~[lavaplayer-2.2.3.jar!/:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+Caused by: java.lang.IllegalStateException: Must find action functions from script: /s/player/fc2a56a5/player_ias.vflset/en_GB/base.js
+	at dev.lavalink.youtube.cipher.SignatureCipherManager.extractFromScript(SignatureCipherManager.java:259) ~[jar:file:C:\Users\Karnik Chauhan\Desktop\Code Stuff\Musipy\.\plugins\youtube-plugin-1.11.5.jar!/:na]
+	at dev.lavalink.youtube.cipher.SignatureCipherManager.getCipherScript(SignatureCipherManager.java:219) ~[jar:file:C:\Users\Karnik Chauhan\Desktop\Code Stuff\Musipy\.\plugins\youtube-plugin-1.11.5.jar!/:na]
+	at dev.lavalink.youtube.clients.skeleton.NonMusicClient.loadTrackInfoFromInnertube(NonMusicClient.java:110) ~[jar:file:C:\Users\Karnik Chauhan\Desktop\Code Stuff\Musipy\.\plugins\youtube-plugin-1.11.5.jar!/:na]
+	at dev.lavalink.youtube.clients.skeleton.StreamingNonMusicClient.loadFormats(StreamingNonMusicClient.java:35) ~[jar:file:C:\Users\Karnik Chauhan\Desktop\Code Stuff\Musipy\.\plugins\youtube-plugin-1.11.5.jar!/:na]
+	at dev.lavalink.youtube.track.YoutubeAudioTrack.loadBestFormatWithUrl(YoutubeAudioTrack.java:194) ~[jar:file:C:\Users\Karnik Chauhan\Desktop\Code Stuff\Musipy\.\plugins\youtube-plugin-1.11.5.jar!/:na]
+	at dev.lavalink.youtube.track.YoutubeAudioTrack.processWithClient(YoutubeAudioTrack.java:131) ~[jar:file:C:\Users\Karnik Chauhan\Desktop\Code Stuff\Musipy\.\plugins\youtube-plugin-1.11.5.jar!/:na]
+	at dev.lavalink.youtube.track.YoutubeAudioTrack.process(YoutubeAudioTrack.java:79) ~[jar:file:C:\Users\Karnik Chauhan\Desktop\Code Stuff\Musipy\.\plugins\youtube-plugin-1.11.5.jar!/:na]
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:109) ~[lavaplayer-2.2.3.jar!/:na]
+	... 4 common frames omitted
+	Suppressed: dev.lavalink.youtube.ClientInformation: 
+  yts.version: 1.11.5
+  client.identifier: ANDROID_VR
+  client.options: ClientOptions{playback=true, playlistLoading=true, videoLoading=true, searching=true}
+
+2025-06-11T12:43:04.999+05:30  INFO 6056 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/qfhmw2yo4jtped5b/players/1091696068607086633, client=0:0:0:0:0:0:0:1, payload={"track": {"encoded": null}}
+2025-06-11T12:43:05.012+05:30  INFO 6056 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : DELETE /v4/sessions/qfhmw2yo4jtped5b/players/1091696068607086633, client=127.0.0.1
+2025-06-11T12:43:35.829+05:30  INFO 6056 --- [Lavalink] [XNIO-1 I/O-5] lavalink.server.io.SocketServer          : Connection closed from /[0:0:0:0:0:0:0:1]:55275 with id qfhmw2yo4jtped5b -- CloseStatus[code=1006, reason=]
+2025-06-11T12:43:35.831+05:30  INFO 6056 --- [Lavalink] [XNIO-1 I/O-5] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
+2025-06-11T12:49:18.207+05:30  INFO 5096 --- [Lavalink] [main] lavalink.server.Launcher                 : Starting Launcher v4.1.1 using Java 17.0.15 with PID 5096 (C:\Users\Karnik Chauhan\Desktop\Code Stuff\Musipy\Lavalink.jar started by Karnik Chauhan in C:\Users\Karnik Chauhan\Desktop\Code Stuff\Musipy)
+2025-06-11T12:49:18.216+05:30  INFO 5096 --- [Lavalink] [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T12:49:19.180+05:30  INFO 5096 --- [Lavalink] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3d6bf653-92ea-3fde-943a-10b9f8cd696e
+2025-06-11T12:49:19.777+05:30  INFO 5096 --- [Lavalink] [main] l.server.bootstrap.PluginManager         : Loaded 'lavasrc-plugin-4.4.2.jar' (170 classes)
+2025-06-11T12:49:19.799+05:30  INFO 5096 --- [Lavalink] [main] l.server.bootstrap.PluginManager         : Loaded 'youtube-plugin-1.13.3.jar' (16 classes)
+2025-06-11T12:49:20.237+05:30  INFO 5096 --- [Lavalink] [main] lavalink.server.Launcher                 : Started Launcher in 2.932 seconds (process running for 3.736)
+2025-06-11T12:49:20.491+05:30  INFO 5096 --- [Lavalink] [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        4.1.1
+	Build time:     05.06.2025 07:37:42 UTC
+	Branch          HEAD
+	Commit:         4238202
+	Commit time:    05.06.2025 07:11:37 UTC
+	JVM:            17.0.15
+	Lavaplayer      2.2.3
+
+2025-06-11T12:49:20.511+05:30  INFO 5096 --- [Lavalink] [main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T12:49:21.711+05:30  WARN 5096 --- [Lavalink] [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2025-06-11T12:49:21.749+05:30  INFO 5096 --- [Lavalink] [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2025-06-11T12:49:21.749+05:30  INFO 5096 --- [Lavalink] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1228 ms
+2025-06-11T12:49:21.899+05:30  INFO 5096 --- [Lavalink] [main] c.g.t.lavasrc.plugin.LavaSrcPlugin       : Loading LavaSrc plugin...
+2025-06-11T12:49:23.771+05:30  INFO 5096 --- [Lavalink] [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2025-06-11T12:49:24.339+05:30  INFO 5096 --- [Lavalink] [main] c.g.t.lavasrc.plugin.LavaSrcPlugin       : Registering Spotify audio source manager...
+2025-06-11T12:49:24.410+05:30  INFO 5096 --- [Lavalink] [main] d.l.youtube.plugin.YoutubePluginLoader   : YouTube source initialised with clients: WEB_REMIX, ANDROID_VR, WEB, WEB_EMBEDDED_PLAYER 
+2025-06-11T12:49:24.688+05:30  INFO 5096 --- [Lavalink] [main] l.server.config.KoeConfiguration         : OS: WINDOWS, Arch: X86_64
+2025-06-11T12:49:24.688+05:30  INFO 5096 --- [Lavalink] [main] l.server.config.KoeConfiguration         : Enabling JDA-NAS
+2025-06-11T12:49:24.696+05:30  INFO 5096 --- [Lavalink] [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: loading with filter null
+2025-06-11T12:49:24.713+05:30  INFO 5096 --- [Lavalink] [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: successfully loaded.
+2025-06-11T12:49:24.769+05:30  WARN 5096 --- [Lavalink] [main] l.server.config.SentryConfiguration      : Turning off sentry
+2025-06-11T12:49:25.351+05:30  INFO 5096 --- [Lavalink] [main] io.undertow                              : starting server: Undertow - 2.3.13.Final
+2025-06-11T12:49:25.370+05:30  INFO 5096 --- [Lavalink] [main] org.xnio                                 : XNIO version 3.8.8.Final
+2025-06-11T12:49:25.391+05:30  INFO 5096 --- [Lavalink] [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.8.Final
+2025-06-11T12:49:25.507+05:30  INFO 5096 --- [Lavalink] [main] org.jboss.threads                        : JBoss Threads version 3.5.0.Final
+2025-06-11T12:49:25.577+05:30  INFO 5096 --- [Lavalink] [main] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port 8080 (http) with context path '/'
+2025-06-11T12:49:25.796+05:30  INFO 5096 --- [Lavalink] [main] lavalink.server.Launcher                 : Started Launcher in 5.539 seconds (process running for 9.289)
+2025-06-11T12:49:25.796+05:30  INFO 5096 --- [Lavalink] [main] lavalink.server.Launcher                 : Lavalink is ready to accept connections.
+2025-06-11T12:49:48.622+05:30  INFO 5096 --- [Lavalink] [XNIO-1 task-2] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-11T12:49:48.622+05:30  INFO 5096 --- [Lavalink] [XNIO-1 task-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-11T12:49:48.626+05:30  INFO 5096 --- [Lavalink] [XNIO-1 task-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-06-11T12:49:48.677+05:30  INFO 5096 --- [Lavalink] [XNIO-1 task-2] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /[0:0:0:0:0:0:0:1]:55349
+2025-06-11T12:49:48.709+05:30  INFO 5096 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /v4/websocket, client=0:0:0:0:0:0:0:1
+2025-06-11T12:49:48.797+05:30  INFO 5096 --- [Lavalink] [XNIO-1 task-2] lavalink.server.io.SocketServer          : Connection successfully established from Lavalink.py/5.9.0
+2025-06-11T12:49:49.419+05:30  INFO 5096 --- [Lavalink] [XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:ziar"
+2025-06-11T12:49:49.755+05:30  INFO 5096 --- [Lavalink] [XNIO-1 task-2] d.l.y.http.YoutubeAccessTokenTracker     : Updating YouTube visitor id succeeded, new one is Cgs0NGJDejYtbGlZUSiL3KTCBjIKCgJJThIEGgAgDToMCAEgr9fSj7LBy6RoWJS46fy4t427zwE%3D, next update will be after 600 seconds.
+2025-06-11T12:49:50.376+05:30  INFO 5096 --- [Lavalink] [XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Loaded playlist Search results for: ziar
+2025-06-11T12:49:50.483+05:30  INFO 5096 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=ytsearch:ziar, client=127.0.0.1
+2025-06-11T12:49:50.703+05:30  INFO 5096 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/mw7ze9grx2jdxsz9/players/1091696068607086633, client=0:0:0:0:0:0:0:1, payload={"voice": {"sessionId": "5655a81a15e33b0596e365b5c361f53f", "endpoint": "india10036.discord.media:443", "token": "bc886b4fbeedfd32"}}
+2025-06-11T12:49:51.187+05:30  INFO 5096 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/mw7ze9grx2jdxsz9/players/1091696068607086633, client=127.0.0.1, payload={"track": {"encoded": "QAAA4wMAKEhvdyB0byBzYXkgInppYXIiISAoSGlnaCBRdWFsaXR5IFZvaWNlcykALS8gVGhlIFdvcmRCb3ggLyAjMSBQcm9udW5jaWF0aW9uIEd1aWRlIFZpZGVvcwAAAAAAAJhYAAt1M25OMjRBWF8tMAABACtodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PXUzbk4yNEFYXy0wAQAwaHR0cHM6Ly9pLnl0aW1nLmNvbS92aS91M25OMjRBWF8tMC9tcWRlZmF1bHQuanBnAAAHeW91dHViZQAAAAAAAAAA"}}
+2025-06-11T12:50:00.231+05:30  INFO 5096 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/mw7ze9grx2jdxsz9/players/1091696068607086633, client=0:0:0:0:0:0:0:1, payload={"track": {"encoded": null}}
+2025-06-11T12:50:00.242+05:30  INFO 5096 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : DELETE /v4/sessions/mw7ze9grx2jdxsz9/players/1091696068607086633, client=127.0.0.1
+2025-06-11T12:57:29.983+05:30  INFO 5096 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:bling bang bang born"
+2025-06-11T12:57:30.725+05:30  INFO 5096 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/mw7ze9grx2jdxsz9/players/1091696068607086633, client=127.0.0.1, payload={"voice": {"sessionId": "5655a81a15e33b0596e365b5c361f53f", "endpoint": "india10036.discord.media:443", "token": "91ad71a72995c401"}}
+2025-06-11T12:57:30.893+05:30  INFO 5096 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Loaded playlist Search results for: bling bang bang born
+2025-06-11T12:57:30.897+05:30  INFO 5096 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=ytsearch:bling+bang+bang+born, client=0:0:0:0:0:0:0:1
+2025-06-11T12:57:31.411+05:30  INFO 5096 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/mw7ze9grx2jdxsz9/players/1091696068607086633, client=127.0.0.1, payload={"track": {"encoded": "QAAAxAMAK0JsaW5nLUJhbmctQmFuZy1Cb3JuIChPZmZpY2lhbCBNdXNpYyBWaWRlbykAC1RoZUFuaW1lTWVuAAAAAAACjFgACzVOemZxV19ZdDZZAAEAK2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9NU56ZnFXX1l0NlkBADBodHRwczovL2kueXRpbWcuY29tL3ZpLzVOemZxV19ZdDZZL21xZGVmYXVsdC5qcGcAAAd5b3V0dWJlAAAAAAAAAAA="}}
+2025-06-11T13:00:19.264+05:30  INFO 5096 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/mw7ze9grx2jdxsz9/players/1091696068607086633, client=0:0:0:0:0:0:0:1, payload={"track": {"encoded": null}}
+2025-06-11T13:00:19.276+05:30  INFO 5096 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : DELETE /v4/sessions/mw7ze9grx2jdxsz9/players/1091696068607086633, client=0:0:0:0:0:0:0:1
+2025-06-11T13:02:43.164+05:30  INFO 5096 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:runaway lyrics"
+2025-06-11T13:02:43.748+05:30  INFO 5096 --- [Lavalink] [XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Loaded playlist Search results for: runaway lyrics
+2025-06-11T13:02:43.751+05:30  INFO 5096 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=ytsearch:runaway+lyrics, client=0:0:0:0:0:0:0:1
+2025-06-11T13:02:43.905+05:30  INFO 5096 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/mw7ze9grx2jdxsz9/players/1091696068607086633, client=127.0.0.1, payload={"voice": {"sessionId": "5655a81a15e33b0596e365b5c361f53f", "endpoint": "india10036.discord.media:443", "token": "fd60a668917350e2"}}
+2025-06-11T13:02:44.261+05:30  INFO 5096 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/mw7ze9grx2jdxsz9/players/1091696068607086633, client=0:0:0:0:0:0:0:1, payload={"track": {"encoded": "QAAAsQMAGUFVUk9SQSAtIFJ1bmF3YXkgKEx5cmljcykAClZpYmUgTXVzaWMAAAAAAAPQkAALUWx1ZVRkRUIzNE0AAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1RbHVlVGRFQjM0TQEAMGh0dHBzOi8vaS55dGltZy5jb20vdmkvUWx1ZVRkRUIzNE0vbXFkZWZhdWx0LmpwZwAAB3lvdXR1YmUAAAAAAAAAAA=="}}
+2025-06-11T13:02:58.917+05:30  INFO 5096 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/mw7ze9grx2jdxsz9/players/1091696068607086633, client=0:0:0:0:0:0:0:1, payload={"track": {"encoded": null}}
+2025-06-11T13:02:58.922+05:30  INFO 5096 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : DELETE /v4/sessions/mw7ze9grx2jdxsz9/players/1091696068607086633, client=0:0:0:0:0:0:0:1
+2025-06-11T13:03:08.918+05:30  INFO 5096 --- [Lavalink] [XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:runaway kanye"
+2025-06-11T13:03:09.387+05:30  INFO 5096 --- [Lavalink] [XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Loaded playlist Search results for: runaway kanye
+2025-06-11T13:03:09.393+05:30  INFO 5096 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=ytsearch:runaway+kanye, client=0:0:0:0:0:0:0:1
+2025-06-11T13:03:09.704+05:30  INFO 5096 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/mw7ze9grx2jdxsz9/players/1091696068607086633, client=0:0:0:0:0:0:0:1, payload={"voice": {"sessionId": "5655a81a15e33b0596e365b5c361f53f", "endpoint": "india10036.discord.media:443", "token": "3e4ccffccf076735"}}
+2025-06-11T13:03:09.899+05:30  INFO 5096 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/mw7ze9grx2jdxsz9/players/1091696068607086633, client=0:0:0:0:0:0:0:1, payload={"track": {"encoded": "QAAAyAMAMEthbnllIFdlc3QgLSBSdW5hd2F5IChWaWRlbyBWZXJzaW9uKSBmdC4gUHVzaGEgVAAKS2FueWUgV2VzdAAAAAAABD3wAAtCbTVpQTRadXBlawABACtodHRwczovL3d3dy55b3V0dWJlLmNvbS93YXRjaD92PUJtNWlBNFp1cGVrAQAwaHR0cHM6Ly9pLnl0aW1nLmNvbS92aS9CbTVpQTRadXBlay9tcWRlZmF1bHQuanBnAAAHeW91dHViZQAAAAAAAAAA"}}
+2025-06-11T13:03:14.348+05:30  INFO 5096 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/mw7ze9grx2jdxsz9/players/1091696068607086633, client=0:0:0:0:0:0:0:1, payload={"track": {"encoded": null}}
+2025-06-11T13:03:14.355+05:30  INFO 5096 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : DELETE /v4/sessions/mw7ze9grx2jdxsz9/players/1091696068607086633, client=0:0:0:0:0:0:0:1
+2025-06-11T13:03:22.839+05:30  INFO 5096 --- [Lavalink] [XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:runaway kanye lyrics"
+2025-06-11T13:03:23.421+05:30  INFO 5096 --- [Lavalink] [XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Loaded playlist Search results for: runaway kanye lyrics
+2025-06-11T13:03:23.428+05:30  INFO 5096 --- [Lavalink] [XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=ytsearch:runaway+kanye+lyrics, client=0:0:0:0:0:0:0:1
+2025-06-11T13:03:23.579+05:30  INFO 5096 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/mw7ze9grx2jdxsz9/players/1091696068607086633, client=0:0:0:0:0:0:0:1, payload={"voice": {"sessionId": "5655a81a15e33b0596e365b5c361f53f", "endpoint": "india10036.discord.media:443", "token": "fa8f1cda409b7593"}}
+2025-06-11T13:03:24.047+05:30  INFO 5096 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/mw7ze9grx2jdxsz9/players/1091696068607086633, client=0:0:0:0:0:0:0:1, payload={"track": {"encoded": "QAAAwAMAKUthbnllIFdlc3QgLSBSdW5hd2F5IChMeXJpY3MpIGZ0LiBQdXNoYSBUAAlDaGVycnkgTHUAAAAAAAUoUAALNFRWVDdJT3FIMVkAAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj00VFZUN0lPcUgxWQEAMGh0dHBzOi8vaS55dGltZy5jb20vdmkvNFRWVDdJT3FIMVkvbXFkZWZhdWx0LmpwZwAAB3lvdXR1YmUAAAAAAAAAAA=="}}
+2025-06-11T13:04:20.398+05:30  INFO 5096 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/mw7ze9grx2jdxsz9/players/1091696068607086633, client=0:0:0:0:0:0:0:1, payload={"volume": 75}
+2025-06-11T13:04:20.424+05:30  INFO 5096 --- [Lavalink] [lava-daemon-pool-playback-1-thread-1] c.s.l.c.natives.NativeLibraryLoader      : Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$1029/0x000001b42480d398@2570e64a
+2025-06-11T13:04:20.444+05:30  INFO 5096 --- [Lavalink] [lava-daemon-pool-playback-1-thread-1] c.s.l.c.natives.NativeLibraryLoader      : Native library libmpg123-0: successfully loaded.
+2025-06-11T13:04:20.444+05:30  INFO 5096 --- [Lavalink] [lava-daemon-pool-playback-1-thread-1] c.s.l.c.natives.NativeLibraryLoader      : Native library connector: loading with filter null
+2025-06-11T13:04:20.479+05:30  INFO 5096 --- [Lavalink] [lava-daemon-pool-playback-1-thread-1] c.s.l.c.natives.NativeLibraryLoader      : Native library connector: successfully loaded.
+2025-06-11T13:09:02.936+05:30  INFO 5096 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/mw7ze9grx2jdxsz9/players/1091696068607086633, client=0:0:0:0:0:0:0:1, payload={"track": {"encoded": null}}
+2025-06-11T13:09:02.940+05:30  INFO 5096 --- [Lavalink] [XNIO-1 task-3] l.server.io.RequestLoggingFilter         : DELETE /v4/sessions/mw7ze9grx2jdxsz9/players/1091696068607086633, client=0:0:0:0:0:0:0:1
+2025-06-11T13:19:19.877+05:30  INFO 5096 --- [Lavalink] [XNIO-1 I/O-5] lavalink.server.io.SocketServer          : Connection closed from /[0:0:0:0:0:0:0:1]:55349 with id mw7ze9grx2jdxsz9 -- CloseStatus[code=1006, reason=]
+2025-06-11T13:19:19.878+05:30  INFO 5096 --- [Lavalink] [XNIO-1 I/O-5] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
