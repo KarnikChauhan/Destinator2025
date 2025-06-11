@@ -1,5 +1,5 @@
 server: # REST and WS server
-  port: 8080
+  port: ${PORT:8080}
   address: 0.0.0.0
   http2:
     enabled: false
