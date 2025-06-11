@@ -42,7 +42,7 @@ class LavalinkVoiceClient(disnake.VoiceProtocol):
             # Configure your lavalink node details here
             self.client.lavalink.add_node(
                 host="localhost",
-                port=2333,
+                port=8080,
                 password="youshallnotpass",
                 region="us",
                 name="default-node",
@@ -164,7 +164,7 @@ class MusicCog(commands.Cog):
             # Configure your lavalink node details here
             self.bot.lavalink.add_node(
                 host="localhost",
-                port=2333,
+                port=8080,
                 password="youshallnotpass",
                 region="us",
                 name="default-node",

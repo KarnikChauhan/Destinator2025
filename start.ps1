@@ -10,12 +10,12 @@ function Print-Colored {
     Write-Host $message -ForegroundColor ([System.ConsoleColor]$color)
 }
 
-# Kill any Lavalink process running on port 2333
-$existingProcess = Get-NetTCPConnection -LocalPort 2333 -ErrorAction SilentlyContinue | Where-Object { $_.OwningProcess -ne $null }
+# Kill any Lavalink process running on port 8080
+$existingProcess = Get-NetTCPConnection -LocalPort 8080 -ErrorAction SilentlyContinue | Where-Object { $_.OwningProcess -ne $null }
 if ($existingProcess) {
     $processId = $existingProcess.OwningProcess
     Stop-Process -Id $processId -Force -ErrorAction SilentlyContinue
-    Print-Colored 14 "Stopped existing Lavalink process (PID: $processId) running on port 2333."
+    Print-Colored 14 "Stopped existing Lavalink process (PID: $processId) running on port 8080."
 }
 
 # Read bot token from config/config.json
