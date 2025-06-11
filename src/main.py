@@ -1,16 +1,16 @@
-import asyncio # pylint: disable=E0401
-import os # pylint: disable=E0401
-import platform # pylint: disable=E0401
-import signal # pylint: disable=E0401
-import sys # pylint: disable=E0401
-import traceback # pylint: disable=E0401
+import asyncio  # pylint: disable=E0401
+import os  # pylint: disable=E0401
+import platform  # pylint: disable=E0401
+import signal  # pylint: disable=E0401
+import sys  # pylint: disable=E0401
+import traceback  # pylint: disable=E0401
 
-import disnake # pylint: disable=E0401
-from colorama import Fore # pylint: disable=E0401
-from disnake.ext import commands # pylint: disable=E0401
+import disnake  # pylint: disable=E0401
+from colorama import Fore  # pylint: disable=E0401
+from disnake.ext import commands  # pylint: disable=E0401
 
-from ext.logger import get_logger # pylint: disable=E0401
-from ext.utils import CLI_Parser, Utils # pylint: disable=E0401
+from ext.logger import get_logger  # pylint: disable=E0401
+from ext.utils import Utils  # Removed CLI_Parser import
 
 
 class Bot(commands.InteractionBot):
@@ -36,7 +36,7 @@ bot = Bot(
     default_install_types=disnake.ApplicationInstallTypes.all(),
     status=disnake.Status.online,
     activity=disnake.CustomActivity(name="Destinator"),
-    #test_guilds=[],
+    # test_guilds=[],
 )
 
 
@@ -50,22 +50,22 @@ async def on_ready():
 
 async def shutdown(signal, loop):
     """Graceful shutdown handler"""
+    logger = get_logger(__name__)
     logger.info(f"Received {signal.name}, shutting down...")
     await bot.close()
 
 
-
-
 if __name__ == "__main__":
     logger = get_logger(__name__)
-    parser = CLI_Parser.from_sys_args()
-    token = parser.get_argument("token")
+
+    # ✅ Read token from environment variable
+    token = os.getenv("BOT_TOKEN")
 
     if not token:
-        logger.error("Bot token not provided. Use --token")
+        logger.error("Bot token not found in environment variables. Please set BOT_TOKEN.")
         sys.exit(1)
 
-    logger.info("Bot token found, initializing bot...")
+    logger.info("Bot token found in environment, initializing bot...")
 
     try:
         loop = asyncio.get_event_loop()
@@ -76,9 +76,7 @@ if __name__ == "__main__":
                     s, lambda s=s: asyncio.create_task(shutdown(s, loop))
                 )
         else:
-            logger.warning(
-                "Signal handlers are not supported on Windows. Use Ctrl+C to stop the bot."
-            )
+            logger.warning("Signal handlers are not supported on Windows. Use Ctrl+C to stop the bot.")
 
         loop.run_until_complete(bot.start(token))
     except disnake.LoginFailure:
