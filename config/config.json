@@ -1,1 +1,3 @@
-const token = process.env.BOT_TOKEN;
+{
+  "bot_token":""
+}
